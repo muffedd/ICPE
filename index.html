@@ -1,0 +1,1515 @@
+<!DOCTYPE html>
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>RIPE 2027 | 3rd International Conference on Recent Innovations in Production Engineering</title>
+<meta name="description" content="Join RIPE 2027 — the 3rd International Conference on Recent Innovations in Production Engineering at MIT Campus, Anna University, Chennai. January 22-23, 2027."/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://cdn.jsdelivr.net" rel="preconnect"/>
+<link href="https://cdnjs.cloudflare.com" rel="preconnect"/>
+<link href="https://images.unsplash.com" rel="preconnect"/>
+<link href="https://lh3.googleusercontent.com" rel="preconnect"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@300;400;500;600;700&family=Public+Sans:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+
+<script defer="" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script defer="" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+<script defer="" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollToPlugin.min.js"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "surface-dim": "#0e0e10",
+                      "secondary-dim": "#8d96f4",
+                      "on-primary": "#00257b",
+                      "on-secondary-fixed-variant": "#3e47a0",
+                      "on-secondary-container": "#c9cdff",
+                      "surface-container-low": "#131315",
+                      "on-secondary": "#0b1574",
+                      "background": "#0e0e10",
+                      "on-error": "#490013",
+                      "primary-fixed-dim": "#6c8cff",
+                      "on-tertiary-fixed-variant": "#701c6a",
+                      "secondary": "#929bfa",
+                      "on-tertiary-fixed": "#450042",
+                      "surface-bright": "#2c2c2f",
+                      "inverse-primary": "#004eea",
+                      "on-tertiary-container": "#661060",
+                      "on-tertiary": "#711d6a",
+                      "on-primary-fixed-variant": "#002376",
+                      "primary": "#94aaff",
+                      "on-background": "#f9f5f8",
+                      "on-secondary-fixed": "#1f2882",
+                      "inverse-surface": "#fcf8fb",
+                      "on-surface-variant": "#adaaad",
+                      "on-surface": "#f9f5f8",
+                      "on-primary-fixed": "#000000",
+                      "tertiary-dim": "#ef8cde",
+                      "secondary-fixed": "#cbceff",
+                      "outline-variant": "#48474a",
+                      "inverse-on-surface": "#565457",
+                      "error-dim": "#d73357",
+                      "on-primary-container": "#001b61",
+                      "outline": "#767577",
+                      "on-error-container": "#ffb2b9",
+                      "primary-dim": "#3367ff",
+                      "surface-container-lowest": "#000000",
+                      "tertiary-fixed-dim": "#ef8cde",
+                      "surface-variant": "#262528",
+                      "tertiary-fixed": "#fe99ed",
+                      "surface-tint": "#94aaff",
+                      "surface-container-high": "#1f1f22",
+                      "tertiary": "#ffb0ef",
+                      "surface-container-highest": "#262528",
+                      "secondary-fixed-dim": "#babfff",
+                      "error": "#ff6e84",
+                      "primary-fixed": "#809bff",
+                      "tertiary-container": "#fe99ed",
+                      "surface-container": "#19191c",
+                      "error-container": "#a70138",
+                      "primary-container": "#809bff",
+                      "surface": "#0e0e10",
+                      "secondary-container": "#343d96"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0px",
+                      "lg": "0px",
+                      "xl": "0px",
+                      "full": "0px"
+              },
+              "fontFamily": {
+                      "headline": ["Anton", "sans-serif"],
+                      "body": ["Inter", "sans-serif"],
+                      "label": ["Swansea", "Public Sans", "sans-serif"],
+                      "serif": ["Playfair Display", "serif"]
+              }
+            },
+          },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        @font-face {
+            font-family: 'Swansea';
+            src: local('Swansea'), local('Swansea-Regular');
+            font-weight: normal;
+            font-style: normal;
+        }
+        @font-face {
+            font-family: 'Swansea';
+            src: local('Swansea Bold'), local('Swansea-Bold');
+            font-weight: bold;
+            font-style: normal;
+        }
+        .hero-gradient {
+            background: linear-gradient(to top, #3367ff 0%, #3367ff 20%, rgba(51, 103, 255, 0.4) 45%, transparent 70%);
+        }
+        .mobile-nav-open {
+            overflow: hidden;
+        }
+        /* Section Dividers — boosted opacity for better visibility */
+        .section-divider {
+            position: relative;
+            height: 1px;
+            width: 100%;
+            overflow: hidden;
+        }
+        .section-divider::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.18) 15%, rgba(255,255,255,0.18) 85%, transparent);
+            transform: scaleX(0);
+            transform-origin: center;
+            transition: none;
+        }
+        .section-divider.is-visible::before {
+            transform: scaleX(1);
+        }
+        /* Horizontal scroll committee */
+        .hs-panel {
+            width: 100vw;
+            height: 100vh;
+            overflow: hidden;
+            position: relative;
+        }
+        .hs-track {
+            display: flex;
+            flex-wrap: nowrap;
+            gap: 24px;
+            height: 100%;
+            align-items: center;
+            padding: 0 5vw;
+            padding-top: 100px;
+            will-change: transform;
+        }
+        .hs-card {
+            flex: 0 0 280px;
+            min-height: 320px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        @media (min-width: 768px) {
+            .hs-card {
+                flex: 0 0 300px;
+                min-height: 340px;
+            }
+        }
+        /* FAQ accordion */
+        .faq-item .faq-answer {
+            overflow: hidden;
+            transition: height 0.5s cubic-bezier(0.77, 0, 0.175, 1);
+        }
+        /* Pricing card hover glow */
+        .pricing-card {
+            transition: transform 0.4s cubic-bezier(0.22, 1, 0.36, 1), box-shadow 0.4s ease;
+        }
+        .pricing-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 60px rgba(51, 103, 255, 0.15);
+        }
+        /* Agenda table rows */
+        .agenda-row {
+            display: grid;
+            grid-template-columns: 140px 1fr;
+            gap: 0;
+            border-top: 1px solid rgba(255,255,255,0.08);
+        }
+        .agenda-row:last-child {
+            border-bottom: 1px solid rgba(255,255,255,0.08);
+        }
+        .agenda-time-cell {
+            padding: 20px 16px 20px 0;
+            border-right: 1px solid rgba(255,255,255,0.06);
+        }
+        .agenda-event-cell {
+            padding: 20px 0 20px 24px;
+        }
+        @media (max-width: 640px) {
+            .agenda-row {
+                grid-template-columns: 100px 1fr;
+            }
+            .agenda-time-cell {
+                padding: 16px 12px 16px 0;
+            }
+            .agenda-event-cell {
+                padding: 16px 0 16px 16px;
+            }
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body selection:bg-primary selection:text-on-primary">
+<!-- Top Navigation Bar -->
+<nav class="fixed top-0 w-full h-16 rounded-none border-none bg-neutral-950/90 backdrop-blur-none z-50 flex justify-between items-center px-8 max-w-full mx-auto transition-all duration-500">
+<div class="text-2xl font-normal tracking-wide text-white uppercase font-headline">RIPE 2027</div>
+<div class="hidden lg:flex items-center space-x-8">
+<a class="font-label uppercase tracking-[0.15em] text-[10px] font-bold text-white/70 hover:text-white transition-colors duration-150" href="#home">HOME</a>
+<a class="font-label uppercase tracking-[0.15em] text-[10px] font-bold text-white/70 hover:text-white transition-colors duration-150" href="#about">ABOUT</a>
+<a class="font-label uppercase tracking-[0.15em] text-[10px] font-bold text-white/70 hover:text-white transition-colors duration-150" href="#for-authors">FOR AUTHORS</a>
+<a class="font-label uppercase tracking-[0.15em] text-[10px] font-bold text-white/70 hover:text-white transition-colors duration-150" href="#committee">COMMITTEE</a>
+<a class="font-label uppercase tracking-[0.15em] text-[10px] font-bold text-white/70 hover:text-white transition-colors duration-150" href="#pricing">PRICING</a>
+<a class="font-label uppercase tracking-[0.15em] text-[10px] font-bold text-white/70 hover:text-white transition-colors duration-150" href="#contact">CONTACT US</a>
+<a class="font-label uppercase tracking-[0.15em] text-[10px] font-bold bg-blue-600 text-white px-6 py-2 scale-100 active:opacity-80 transition-all ml-4 hover:bg-blue-500" href="mailto:ripe2027@mitindia.edu?subject=RIPE%202027%20Ticket%20Enquiry">GET A TICKET</a>
+</div>
+<button aria-controls="mobile-menu" aria-expanded="false" aria-label="Toggle navigation menu" class="lg:hidden text-white flex items-center justify-center" id="mobile-menu-button" type="button">
+<span class="material-symbols-outlined text-3xl">menu</span>
+</button>
+</nav>
+<div class="fixed inset-x-0 top-16 z-40 hidden border-t border-white/10 bg-neutral-950/95 px-8 py-6 lg:hidden" id="mobile-menu">
+<div class="flex flex-col gap-4">
+<a class="font-label uppercase tracking-[0.15em] text-[11px] font-bold text-white/80 hover:text-white transition-colors duration-150" href="#home">HOME</a>
+<a class="font-label uppercase tracking-[0.15em] text-[11px] font-bold text-white/80 hover:text-white transition-colors duration-150" href="#about">ABOUT</a>
+<a class="font-label uppercase tracking-[0.15em] text-[11px] font-bold text-white/80 hover:text-white transition-colors duration-150" href="#for-authors">FOR AUTHORS</a>
+<a class="font-label uppercase tracking-[0.15em] text-[11px] font-bold text-white/80 hover:text-white transition-colors duration-150" href="#committee">COMMITTEE</a>
+<a class="font-label uppercase tracking-[0.15em] text-[11px] font-bold text-white/80 hover:text-white transition-colors duration-150" href="#pricing">PRICING</a>
+<a class="font-label uppercase tracking-[0.15em] text-[11px] font-bold text-white/80 hover:text-white transition-colors duration-150" href="#contact">CONTACT US</a>
+<a class="font-label uppercase tracking-[0.15em] text-[11px] font-bold bg-blue-600 text-white px-4 py-3 text-center hover:bg-blue-500 transition-colors duration-150" href="mailto:ripe2027@mitindia.edu?subject=RIPE%202027%20Ticket%20Enquiry">GET A TICKET</a>
+</div>
+</div>
+
+<!-- Hero Section -->
+<section id="home" class="relative min-h-screen flex items-center justify-center overflow-hidden pt-16">
+<!-- Background Image with B&W processing -->
+<div class="absolute inset-0 z-0">
+<img alt="Industrial factory and production engineering" class="w-full h-full object-cover grayscale brightness-[0.4]" decoding="async" fetchpriority="high" src="./Industry_factory_in_202604120746.webp"/>
+<div class="absolute inset-0 hero-gradient"></div>
+</div>
+
+<!-- Center Huge Text — responsive sizing fix for mobile -->
+<div class="relative z-10 w-full max-w-7xl mx-auto px-8 flex flex-col justify-center items-center mt-[-10vh]">
+    <div class="w-full flex flex-col gap-2 md:gap-8 items-center md:items-start md:pl-[10%] lg:pl-[15%]">
+        <span class="font-label text-primary/90 uppercase tracking-[0.25em] text-[10px] md:text-xs lg:text-sm font-bold block mb-1 md:mb-[-15px] ml-1 text-center md:text-left">3rd International Conference on Recent Innovations in Production Engineering</span>
+        <h1 class="font-headline text-[52px] md:text-[120px] lg:text-[150px] font-normal text-white leading-[0.9] tracking-normal uppercase text-left">
+            RIPE
+        </h1>
+        <h1 class="font-headline text-[52px] md:text-[120px] lg:text-[150px] font-normal text-white leading-[0.9] tracking-normal uppercase md:ml-[10%] lg:ml-[15%]">
+            SUMMIT 2027
+        </h1>
+    </div>
+</div>
+
+<!-- Bottom Event Details — added spacing to prevent overlap on mobile -->
+<div class="absolute bottom-0 left-0 w-full z-20 px-8 pb-12 flex flex-col md:flex-row justify-between items-end gap-6 max-w-7xl mx-auto right-0">
+    <div class="flex flex-col mt-8">
+        <h3 class="text-white font-bold text-xl md:text-2xl mb-2 font-body">READY TO BE PART OF IT?</h3>
+        <p class="text-white/80 text-sm font-label max-w-sm mb-4">Don't miss out on the premier production engineering event! Secure your spot now.</p>
+        <a class="bg-white text-blue-600 px-8 py-3 font-label font-bold text-[10px] tracking-[0.1em] uppercase transition-all hover:bg-neutral-200 self-start" href="mailto:ripe2027@mitindia.edu?subject=RIPE%202027%20Ticket%20Enquiry">GET A TICKET</a>
+    </div>
+    
+    <div class="flex flex-col sm:flex-row gap-4 mb-4 md:mb-0">
+        <div class="bg-blue-500/20 backdrop-blur-sm border border-blue-400/30 text-white px-6 py-4 flex items-center gap-3">
+            <span class="material-symbols-outlined text-sm">location_on</span>
+            <span class="font-label font-bold tracking-widest text-[10px] uppercase">CHENNAI, INDIA</span>
+        </div>
+        <div class="bg-blue-500/20 backdrop-blur-sm border border-blue-400/30 text-white px-6 py-4 flex items-center gap-3">
+            <span class="material-symbols-outlined text-sm">calendar_month</span>
+            <span class="font-label font-bold tracking-widest text-[10px] uppercase">JANUARY 22-23, 2027</span>
+        </div>
+    </div>
+</div>
+</section>
+
+<div class="section-divider" aria-hidden="true"></div>
+
+<!-- Statistics Section (Bento Grid Style) -->
+<section id="stats" class="bg-background py-24 px-8">
+<div class="max-w-7xl mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-0 border border-white/10 shadow-2xl shadow-black/80">
+<div class="p-12 border-b md:border-b-0 md:border-r border-white/10 flex flex-col gap-4 bg-white/[0.02] hover:bg-white/[0.04] transition-colors duration-500 backdrop-blur-sm group">
+<span class="font-label text-primary tracking-[0.2em] text-[10px] font-bold uppercase group-hover:text-white transition-colors">Tracks</span>
+<span class="font-headline font-normal text-6xl text-on-surface">25+</span>
+<p class="font-label text-sm text-on-surface-variant">Core manufacturing &amp; digital production domains</p>
+</div>
+<div class="p-12 border-b md:border-b-0 md:border-r border-white/10 flex flex-col gap-4 hover:bg-white/[0.04] transition-colors duration-500 group">
+<span class="font-label text-primary tracking-[0.2em] text-[10px] font-bold uppercase group-hover:text-white transition-colors">Journals</span>
+<span class="font-headline font-normal text-6xl text-on-surface">Q1/Q2</span>
+<p class="font-label text-sm text-on-surface-variant">Selected papers published in Scopus-indexed journals</p>
+</div>
+<div class="p-12 border-b md:border-b-0 md:border-r border-white/10 flex flex-col gap-4 bg-white/[0.02] hover:bg-white/[0.04] transition-colors duration-500 backdrop-blur-sm group">
+<span class="font-label text-primary tracking-[0.2em] text-[10px] font-bold uppercase group-hover:text-white transition-colors">Location</span>
+<span class="font-headline font-normal text-6xl text-on-surface">MIT</span>
+<p class="font-label text-sm text-on-surface-variant">Madras Institute of Technology Campus</p>
+</div>
+<div class="p-12 flex flex-col gap-4 hover:bg-white/[0.04] transition-colors duration-500 group">
+<span class="font-label text-primary tracking-[0.2em] text-[10px] font-bold uppercase group-hover:text-white transition-colors">Legacy</span>
+<span class="font-headline font-normal text-6xl text-on-surface">3rd</span>
+<p class="font-label text-sm text-on-surface-variant">Edition of the RIPE international conference</p>
+</div>
+</div>
+</div>
+</section>
+
+<div class="section-divider" aria-hidden="true"></div>
+
+<!-- About Section (Interactive Accordion) -->
+<section id="about" class="bg-[#0e0e10] py-32 overflow-hidden px-4 md:px-8">
+    <div class="max-w-[1400px] mx-auto">
+        <!-- Giant Header -->
+        <h2 class="font-headline text-[20vw] md:text-[250px] leading-[0.8] tracking-tighter mb-12 md:mb-20 text-white uppercase text-center md:text-left transition-transform duration-700">
+            ABOUT
+        </h2>
+        
+        <div class="flex flex-col border-t border-white/20 about-accordion relative z-10 w-full bg-[#0e0e10]">
+            
+            <!-- Item 1: Anna University -->
+            <div class="accordion-item border-b border-white/20 group cursor-pointer bg-[#0e0e10]">
+                <button aria-expanded="false" class="accordion-trigger py-6 md:py-10 flex flex-col md:flex-row md:items-center justify-between transition-colors duration-300 w-full text-left" type="button">
+                    <div class="flex items-center gap-6 md:gap-16 w-full">
+                        <span class="font-label text-xl md:text-3xl text-primary font-bold">01</span>
+                        <h3 class="font-headline text-4xl md:text-7xl font-normal text-white transition-all duration-500 tracking-tight uppercase">Anna University</h3>
+                    </div>
+                    <span class="material-symbols-outlined text-white/50 group-hover:text-white transition-colors transform group-[.active]:rotate-180 duration-500 mt-4 md:mt-0 self-end md:self-auto text-3xl">expand_more</span>
+                </button>
+                <div class="accordion-content overflow-hidden" style="height: 0px;">
+                    <div class="pb-12 pt-4 flex flex-col md:flex-row gap-8 md:gap-12 w-full justify-between items-start">
+                        <div class="w-full md:w-[15%]">
+                            <p class="font-label text-primary uppercase text-[9px] md:text-[10px] tracking-widest leading-loose font-bold">
+                                Est. 1978<br>
+                                Engineering<br>
+                                4 Institutions
+                            </p>
+                        </div>
+                        <div class="w-full md:w-[45%]">
+                            <p class="font-label text-base md:text-lg text-white/80 leading-relaxed font-light">
+                                Anna University was established on September 4th, 1978, as a unitary type of University. It offers higher education in Engineering, Technology, Architecture, and Applied Sciences. Besides promoting research, it fosters cooperation between the academic and industrial communities. It integrates four well-known technical institutions: CEG, ACT, MIT, and SAP.
+                            </p>
+                        </div>
+                        <div class="w-full md:w-[35%] h-[250px] bg-white/5 overflow-hidden">
+                            <img alt="Anna University campus building" class="w-full h-full object-cover scale-105 group-[.active]:scale-100 transition-transform duration-1000 origin-center grayscale opacity-70 group-hover:opacity-100 group-hover:grayscale-0" decoding="async" loading="lazy" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDNQhOhIQnGVWd9g28r0fr9gDdoDWAtSzDOR3E206cHeqGMfJWLc7o4OV2Aady0cdj8e-TCLerchmuRBx2mVd0jJmlAcWhkpWqKuK71yH0OVcaf5PFhY4j15FVlT0rXfHBPcVt3vk0Rhij6BmR3J8LS7--XWBVPYrNDMBNJPvSZOCebrkSWbgMTMXvgzWvIknUogsIL-DdjiMEtruL9loWgwlpAcwB-UhwdCo_37UTPz3UnXzxKa8d907P0LTp-cOIduDz3icK051tm"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Item 2: MIT Campus -->
+            <div class="accordion-item border-b border-white/20 group cursor-pointer bg-[#0e0e10]">
+                <button aria-expanded="false" class="accordion-trigger py-6 md:py-10 flex flex-col md:flex-row md:items-center justify-between transition-colors duration-300 w-full text-left" type="button">
+                    <div class="flex items-center gap-6 md:gap-16 w-full">
+                        <span class="font-label text-xl md:text-3xl text-primary font-bold">02</span>
+                        <h3 class="font-headline text-4xl md:text-7xl font-normal text-white transition-all duration-500 tracking-tight uppercase">Madras Inst. of Tech</h3>
+                    </div>
+                    <span class="material-symbols-outlined text-white/50 group-hover:text-white transition-colors transform group-[.active]:rotate-180 duration-500 mt-4 md:mt-0 self-end md:self-auto text-3xl">expand_more</span>
+                </button>
+                <div class="accordion-content overflow-hidden" style="height: 0px;">
+                    <div class="pb-12 pt-4 flex flex-col md:flex-row gap-8 md:gap-12 w-full justify-between items-start">
+                        <div class="w-full md:w-[15%]">
+                            <p class="font-label text-primary uppercase text-[9px] md:text-[10px] tracking-widest leading-loose font-bold">
+                                Est. 1949<br>
+                                Rare Genius<br>
+                                Notable Alumni
+                            </p>
+                        </div>
+                        <div class="w-full md:w-[45%]">
+                            <p class="font-label text-base md:text-lg text-white/80 leading-relaxed font-light">
+                                In 1949, Shri C. Rajam established the Madras Institute of Technology. It was the rare genius and daring of its founder that made MIT offer courses like Aeronautical, Automobile, Electronics Engineering, and Instrument Technology for the first time in India. MIT has produced great scientists like Dr. A.P.J. Abdul Kalam and ISRO Chairman K. Sivan.
+                            </p>
+                        </div>
+                        <div class="w-full md:w-[35%] h-[250px] bg-white/5 overflow-hidden">
+                            <img alt="Historic academic campus building" class="w-full h-full object-cover scale-105 group-[.active]:scale-100 transition-transform duration-1000 origin-center grayscale opacity-70 group-hover:opacity-100 group-hover:grayscale-0" decoding="async" loading="lazy" src="https://images.unsplash.com/photo-1541339907198-e08756dedf3f?auto=format&amp;fit=crop&amp;q=80"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Item 3: The Department -->
+            <div class="accordion-item border-b border-white/20 group cursor-pointer bg-[#0e0e10]">
+                <button aria-expanded="false" class="accordion-trigger py-6 md:py-10 flex flex-col md:flex-row md:items-center justify-between transition-colors duration-300 w-full text-left" type="button">
+                    <div class="flex items-center gap-6 md:gap-16 w-full">
+                        <span class="font-label text-xl md:text-3xl text-primary font-bold">03</span>
+                        <h3 class="font-headline text-4xl md:text-7xl font-normal text-white transition-all duration-500 tracking-tight uppercase">The Department</h3>
+                    </div>
+                    <span class="material-symbols-outlined text-white/50 group-hover:text-white transition-colors transform group-[.active]:rotate-180 duration-500 mt-4 md:mt-0 self-end md:self-auto text-3xl">expand_more</span>
+                </button>
+                <div class="accordion-content overflow-hidden" style="height: 0px;">
+                    <div class="pb-12 pt-4 flex flex-col md:flex-row gap-8 md:gap-12 w-full justify-between items-start">
+                        <div class="w-full md:w-[15%]">
+                            <p class="font-label text-primary uppercase text-[9px] md:text-[10px] tracking-widest leading-loose font-bold">
+                                Golden Jubilee<br>
+                                Manufacturing<br>
+                                Robotics & Auto
+                            </p>
+                        </div>
+                        <div class="w-full md:w-[45%]">
+                            <p class="font-label text-base md:text-lg text-white/80 leading-relaxed font-light">
+                                The Department of Production Technology proudly celebrates its Golden Jubilee (1977-2027), marking 50 Years of Excellence. Established in 1977, it has grown into a leading multidisciplinary centre for Manufacturing, Automation, Robotics, and Mechatronics. It offers multiple prestigious B.E. and M.E. programs.
+                            </p>
+                        </div>
+                        <div class="w-full md:w-[35%] h-[250px] bg-white/5 overflow-hidden">
+                            <img alt="Advanced manufacturing laboratory" class="w-full h-full object-cover scale-105 group-[.active]:scale-100 transition-transform duration-1000 origin-center grayscale opacity-70 group-hover:opacity-100 group-hover:grayscale-0" decoding="async" loading="lazy" src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&amp;fit=crop&amp;q=80"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Item 4: The Conference -->
+            <div class="accordion-item border-b border-white/20 group cursor-pointer bg-[#0e0e10]">
+                <button aria-expanded="false" class="accordion-trigger py-6 md:py-10 flex flex-col md:flex-row md:items-center justify-between transition-colors duration-300 w-full text-left" type="button">
+                    <div class="flex items-center gap-6 md:gap-16 w-full">
+                        <span class="font-label text-xl md:text-3xl text-primary font-bold">04</span>
+                        <h3 class="font-headline text-4xl md:text-7xl font-normal text-white transition-all duration-500 tracking-tight uppercase">The Conference</h3>
+                    </div>
+                    <span class="material-symbols-outlined text-white/50 group-hover:text-white transition-colors transform group-[.active]:rotate-180 duration-500 mt-4 md:mt-0 self-end md:self-auto text-3xl">expand_more</span>
+                </button>
+                <div class="accordion-content overflow-hidden" style="height: 0px;">
+                    <div class="pb-12 pt-4 flex flex-col md:flex-row gap-8 md:gap-12 w-full justify-between items-start">
+                        <div class="w-full md:w-[15%]">
+                            <p class="font-label text-primary uppercase text-[9px] md:text-[10px] tracking-widest leading-loose font-bold">
+                                3rd Edition<br>
+                                Keynote Lectures<br>
+                                Global Network
+                            </p>
+                        </div>
+                        <div class="w-full md:w-[45%]">
+                            <p class="font-label text-base md:text-lg text-white/80 leading-relaxed font-light">
+                                The 3rd International Conference on Recent Innovations in Production Engineering (RIPE 2027) builds on a legacy of conferences in manufacturing, design, mechatronics, and automation. RIPE 2027 will unite researchers to exchange ideas, address challenges, and gain insights through keynote lectures by eminent speakers.
+                            </p>
+                        </div>
+                        <div class="w-full md:w-[35%] h-[250px] bg-white/5 overflow-hidden">
+                            <img alt="Conference audience in an auditorium" class="w-full h-full object-cover scale-105 group-[.active]:scale-100 transition-transform duration-1000 origin-center grayscale opacity-70 group-hover:opacity-100 group-hover:grayscale-0" decoding="async" loading="lazy" src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?auto=format&amp;fit=crop&amp;q=80"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<div class="section-divider" aria-hidden="true"></div>
+
+<!-- Why Attend Section -->
+<section id="why-attend" class="bg-background py-32 px-8">
+    <div class="max-w-6xl mx-auto">
+        <div class="flex flex-col md:flex-row justify-between items-start md:items-end mb-20 gap-8 border-b border-white/10 pb-12">
+            <div>
+    <span class="font-label text-primary uppercase tracking-[0.3em] text-[10px] font-black mb-4 block">Why RIPE 2027</span>
+    <h2 class="font-headline text-5xl md:text-7xl font-normal uppercase tracking-wide">The RIPE <span class="text-primary">Impact</span></h2>
+</div>
+<p class="font-label text-on-surface-variant text-base max-w-md leading-relaxed">A premier gathering where academia meets industry — immerse yourself in cutting-edge research, world-class speakers, and career-defining networking.</p>
+</div>
+<div class="flex flex-col">
+<div class="agenda-row">
+<div class="agenda-time-cell">
+    <span class="font-label text-primary text-sm font-bold uppercase tracking-widest">01</span>
+</div>
+<div class="agenda-event-cell">
+    <h3 class="font-headline text-lg text-white uppercase">Scopus-Indexed Publications</h3>
+    <p class="font-label text-sm text-on-surface-variant mt-1">Get your research published in Q1/Q2 Scopus-indexed journals and proceedings — a direct boost to your academic portfolio.</p>
+</div>
+</div>
+<div class="agenda-row">
+<div class="agenda-time-cell">
+    <span class="font-label text-primary text-sm font-bold uppercase tracking-widest">02</span>
+</div>
+<div class="agenda-event-cell">
+    <h3 class="font-headline text-lg text-white uppercase">Keynote Lectures</h3>
+    <p class="font-label text-sm text-on-surface-variant mt-1">Learn from eminent speakers from institutions like IIT Madras, NUS Singapore, University of Aveiro, and Vienna University of Technology.</p>
+</div>
+</div>
+<div class="agenda-row">
+<div class="agenda-time-cell">
+    <span class="font-label text-primary text-sm font-bold uppercase tracking-widest">03</span>
+</div>
+<div class="agenda-event-cell">
+    <h3 class="font-headline text-lg text-white uppercase">Global Networking</h3>
+    <p class="font-label text-sm text-on-surface-variant mt-1">Connect with researchers from 10+ countries — forge collaborations that span continents, labs, and disciplines.</p>
+</div>
+</div>
+<div class="agenda-row">
+<div class="agenda-time-cell">
+    <span class="font-label text-primary text-sm font-bold uppercase tracking-widest">04</span>
+</div>
+<div class="agenda-event-cell">
+    <h3 class="font-headline text-lg text-white uppercase">Industry 5.0 Focus</h3>
+    <p class="font-label text-sm text-on-surface-variant mt-1">Dive into the future of manufacturing with tracks on AI-driven production, cyber-physical systems, and human-robot collaboration.</p>
+</div>
+</div>
+<div class="agenda-row">
+<div class="agenda-time-cell">
+    <span class="font-label text-primary text-sm font-bold uppercase tracking-widest">05</span>
+</div>
+<div class="agenda-event-cell">
+    <h3 class="font-headline text-lg text-white uppercase">50 Years of Legacy</h3>
+    <p class="font-label text-sm text-on-surface-variant mt-1">Celebrate the Golden Jubilee of the Department of Production Technology — a milestone event at a historic institution.</p>
+</div>
+</div>
+<div class="agenda-row">
+<div class="agenda-time-cell">
+    <span class="font-label text-primary text-sm font-bold uppercase tracking-widest">06</span>
+</div>
+<div class="agenda-event-cell">
+    <h3 class="font-headline text-lg text-white uppercase">Chennai Experience</h3>
+    <p class="font-label text-sm text-on-surface-variant mt-1">Attend the conference at MIT Campus in vibrant Chennai — a city where ancient culture meets cutting-edge technology.</p>
+</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="section-divider" aria-hidden="true"></div>
+
+<!-- Committee Section — GSAP Horizontal Scroll -->
+<section id="committee" class="bg-background overflow-hidden">
+    <div class="hs-panel">
+        <!-- Left-pinned header — reduced top padding -->
+        <div class="absolute top-0 left-0 w-full z-10 pt-10 pb-4 px-8 pointer-events-none">
+            <div class="max-w-7xl mx-auto">
+                <h2 class="font-headline text-5xl md:text-7xl font-normal uppercase tracking-wide mb-2">Organizing <span class="text-primary">Committee</span></h2>
+                <p id="hs-hint" class="font-label text-on-surface-variant uppercase tracking-widest text-[12px] transition-opacity duration-700">Scroll to explore the team →</p>
+            </div>
+        </div>
+
+        <!-- Horizontal scrolling track -->
+        <div class="hs-track" id="hs-track">
+            <!-- Chief Patrons -->
+            <div class="hs-card bg-white/[0.03] p-8 border border-white/10 flex flex-col items-center text-center hover:bg-white/[0.06] transition-colors duration-300">
+                <span class="material-symbols-outlined text-6xl text-primary mb-6">workspace_premium</span>
+                <span class="font-label text-primary uppercase tracking-widest text-[10px] font-bold mb-2">Chief Patron</span>
+                <h3 class="font-headline text-2xl uppercase text-white mb-2">Dr. P. Sankar IAS</h3>
+                <p class="font-body text-xs text-on-surface-variant">Secretary to Government<br>Higher Education Dept, TN</p>
+            </div>
+            <div class="hs-card bg-white/[0.03] p-8 border border-white/10 flex flex-col items-center text-center hover:bg-white/[0.06] transition-colors duration-300">
+                <span class="material-symbols-outlined text-6xl text-primary mb-6">workspace_premium</span>
+                <span class="font-label text-primary uppercase tracking-widest text-[10px] font-bold mb-2">Chief Patron</span>
+                <h3 class="font-headline text-2xl uppercase text-white mb-2">Dr. S. Visakan IAS</h3>
+                <p class="font-body text-xs text-on-surface-variant">Commissioner of Technical Education<br>DOTE, TN</p>
+            </div>
+            <div class="hs-card bg-white/[0.03] p-8 border border-white/10 flex flex-col items-center text-center hover:bg-white/[0.06] transition-colors duration-300">
+                <span class="material-symbols-outlined text-6xl text-primary mb-6">workspace_premium</span>
+                <span class="font-label text-primary uppercase tracking-widest text-[10px] font-bold mb-2">Chief Patron</span>
+                <h3 class="font-headline text-2xl uppercase text-white mb-2">Dr. B. T. N. Sridhar</h3>
+                <p class="font-body text-xs text-on-surface-variant">Professor, Aerospace Engg.<br>MIT Campus</p>
+            </div>
+            <!-- Patron -->
+            <div class="hs-card bg-white/[0.03] p-8 border border-white/10 flex flex-col items-center text-center hover:bg-white/[0.06] transition-colors duration-300">
+                <span class="material-symbols-outlined text-6xl text-secondary mb-6">verified_user</span>
+                <span class="font-label text-secondary uppercase tracking-widest text-[10px] font-bold mb-2">Patron</span>
+                <h3 class="font-headline text-2xl uppercase text-white mb-2">Dr. V. Kumaresan</h3>
+                <p class="font-body text-xs text-on-surface-variant">Registrar<br>Anna University</p>
+            </div>
+            <!-- Co-Patron -->
+            <div class="hs-card bg-white/[0.03] p-8 border border-white/10 flex flex-col items-center text-center hover:bg-white/[0.06] transition-colors duration-300">
+                <span class="material-symbols-outlined text-6xl text-tertiary mb-6">star</span>
+                <span class="font-label text-tertiary uppercase tracking-widest text-[10px] font-bold mb-2">Co-Patron</span>
+                <h3 class="font-headline text-2xl uppercase text-white mb-2">Dr. P. Jayashree</h3>
+                <p class="font-body text-xs text-on-surface-variant">Dean<br>MIT Campus</p>
+            </div>
+            <!-- Convenor -->
+            <div class="hs-card bg-white/[0.03] p-8 border border-white/10 flex flex-col items-center text-center hover:bg-white/[0.06] transition-colors duration-300">
+                <span class="material-symbols-outlined text-6xl text-tertiary-fixed mb-6">local_library</span>
+                <span class="font-label text-tertiary-fixed uppercase tracking-widest text-[10px] font-bold mb-2">Convenor</span>
+                <h3 class="font-headline text-2xl uppercase text-white mb-2">Dr. J. Jancirani</h3>
+                <p class="font-body text-xs text-on-surface-variant">Professor & Head</p>
+            </div>
+            <!-- Org Secs -->
+            <div class="hs-card bg-white/[0.03] p-8 border border-white/10 flex flex-col items-center text-center hover:bg-white/[0.06] transition-colors duration-300">
+                <span class="material-symbols-outlined text-6xl text-blue-300 mb-6">history_edu</span>
+                <span class="font-label text-blue-300 uppercase tracking-widest text-[10px] font-bold mb-2">Org. Secretary</span>
+                <h3 class="font-headline text-2xl uppercase text-white mb-2">Dr. C. Nandakumar</h3>
+                <p class="font-body text-xs text-on-surface-variant">Associate Professor</p>
+            </div>
+            <div class="hs-card bg-white/[0.03] p-8 border border-white/10 flex flex-col items-center text-center hover:bg-white/[0.06] transition-colors duration-300">
+                <span class="material-symbols-outlined text-6xl text-blue-300 mb-6">history_edu</span>
+                <span class="font-label text-blue-300 uppercase tracking-widest text-[10px] font-bold mb-2">Org. Secretary</span>
+                <h3 class="font-headline text-2xl uppercase text-white mb-2">Dr. P. Ganesh</h3>
+                <p class="font-body text-xs text-on-surface-variant">Associate Professor</p>
+            </div>
+        </div>
+
+        <!-- Navigation Arrows — hidden on small mobile, offset properly on md+ -->
+        <button id="hs-prev" aria-label="Scroll committee left" class="hidden md:flex absolute left-10 top-1/2 -translate-y-1/2 z-20 w-14 h-14 rounded-full bg-white/10 backdrop-blur-md border border-white/20 items-center justify-center text-white hover:bg-white/20 hover:scale-110 active:scale-95 transition-all duration-300 cursor-pointer">
+            <span class="material-symbols-outlined text-2xl">arrow_back</span>
+        </button>
+        <button id="hs-next" aria-label="Scroll committee right" class="hidden md:flex absolute right-10 top-1/2 -translate-y-1/2 z-20 w-14 h-14 rounded-full bg-white/10 backdrop-blur-md border border-white/20 items-center justify-center text-white hover:bg-white/20 hover:scale-110 active:scale-95 transition-all duration-300 cursor-pointer">
+            <span class="material-symbols-outlined text-2xl">arrow_forward</span>
+        </button>
+
+        <!-- Scroll progress bar at bottom -->
+        <div class="absolute bottom-8 left-1/2 -translate-x-1/2 w-[200px] h-[2px] bg-white/10 z-10">
+            <div class="h-full bg-primary transition-none" id="hs-progress" style="width:0%"></div>
+        </div>
+    </div>
+</section>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    // GSAP Animations Engine
+    gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
+
+    // ── Horizontal Scroll for Committee ──
+    const hsTrack = document.getElementById('hs-track');
+    const hsProgress = document.getElementById('hs-progress');
+    const hsHint = document.getElementById('hs-hint');
+    let committeeST = null;
+    if (hsTrack) {
+        const getScrollAmount = () => -(hsTrack.scrollWidth - window.innerWidth);
+        const hsTween = gsap.to(hsTrack, {
+            x: getScrollAmount,
+            ease: "none",
+            scrollTrigger: {
+                trigger: "#committee",
+                start: "top top",
+                end: () => "+="  + Math.abs(getScrollAmount()),
+                pin: true,
+                scrub: 1,
+                invalidateOnRefresh: true,
+                onUpdate: (self) => {
+                    if (hsProgress) hsProgress.style.width = (self.progress * 100) + '%';
+                    // Fade out "scroll to explore" hint after user starts scrolling
+                    if (hsHint && self.progress > 0.05) {
+                        hsHint.style.opacity = '0';
+                    } else if (hsHint) {
+                        hsHint.style.opacity = '1';
+                    }
+                }
+            }
+        });
+        committeeST = hsTween.scrollTrigger;
+
+        // Manual arrow navigation
+        const scrollStep = 350;
+        const hsPrev = document.getElementById('hs-prev');
+        const hsNext = document.getElementById('hs-next');
+        if (hsPrev && hsNext && committeeST) {
+            hsNext.addEventListener('click', () => {
+                gsap.to(window, {
+                    scrollTo: { y: "+="  + scrollStep, autoKill: false },
+                    duration: 0.6,
+                    ease: "power2.inOut"
+                });
+            });
+            hsPrev.addEventListener('click', () => {
+                gsap.to(window, {
+                    scrollTo: { y: "-="  + scrollStep, autoKill: false },
+                    duration: 0.6,
+                    ease: "power2.inOut"
+                });
+            });
+        }
+    }
+
+    // ── Section Divider Animations ──
+    document.querySelectorAll('.section-divider').forEach(div => {
+        gsap.to(div, {
+            scrollTrigger: {
+                trigger: div,
+                start: "top 90%",
+                onEnter: () => div.classList.add('is-visible'),
+            }
+        });
+        gsap.fromTo(div, { '--divider-scale': 0 }, {
+            '--divider-scale': 1,
+            scrollTrigger: { trigger: div, start: "top 90%" },
+            duration: 1.2,
+            ease: "power3.out"
+        });
+    });
+
+    // 1. Hero Entrance Engine
+    const heroTl = gsap.timeline();
+    gsap.set("#home h1", { transformPerspective: 800 }); 
+    gsap.fromTo("#home img", { scale: 1.15 }, { scale: 1, duration: 2.5, ease: "power3.out" });
+    
+    heroTl.from("#home h1", {
+        y: 120,
+        opacity: 0,
+        rotationX: -45,
+        duration: 1.2,
+        stagger: 0.15,
+        ease: "back.out(1.5)"
+    }, "-=2")
+    .from("#home .absolute.bottom-0 > div", {
+        y: 40,
+        opacity: 0,
+        duration: 1,
+        stagger: 0.1,
+        ease: "power3.out"
+    }, "-=0.8");
+
+    // 2. Stats Bento Grid
+    gsap.from("#stats .grid > div", {
+        scrollTrigger: { trigger: "#stats .grid", start: "top 85%" },
+        y: 50,
+        opacity: 0,
+        duration: 0.8,
+        stagger: 0.1,
+        ease: "power3.out"
+    });
+
+    // 3. About Section
+    gsap.from("#about h2", {
+        scrollTrigger: { trigger: "#about", start: "top 80%" },
+        y: 40,
+        opacity: 0,
+        duration: 0.8,
+        ease: "power3.out"
+    });
+
+    // Why Attend Section
+    gsap.from("#why-attend .grid > div", {
+        scrollTrigger: { trigger: "#why-attend .grid", start: "top 85%" },
+        y: 50,
+        opacity: 0,
+        duration: 0.7,
+        stagger: 0.08,
+        ease: "power3.out"
+    });
+
+    // 5. Distinguished Advisors
+    gsap.from("#advisors .grid > div", {
+        scrollTrigger: { trigger: "#advisors .grid", start: "top 75%" },
+        y: 60,
+        opacity: 0,
+        duration: 0.8,
+        stagger: 0.15,
+        ease: "back.out(1.2)"
+    });
+
+    // 6. For Authors Cascade
+    gsap.from("#for-authors h2, #for-authors p", {
+        scrollTrigger: { trigger: "#for-authors", start: "top 85%" },
+        y: 30,
+        opacity: 0,
+        duration: 0.8,
+        stagger: 0.1,
+        ease: "power3.out"
+    });
+    gsap.from("#for-authors .grid > div", {
+        scrollTrigger: { trigger: "#for-authors .grid", start: "top 80%" },
+        x: -20,
+        opacity: 0,
+        duration: 0.5,
+        stagger: 0.03,
+        ease: "back.out(2)"
+    });
+
+    // Pricing Cards
+    gsap.from(".pricing-card", {
+        scrollTrigger: { trigger: "#pricing", start: "top 80%" },
+        y: 60,
+        opacity: 0,
+        duration: 0.8,
+        stagger: 0.12,
+        ease: "back.out(1.4)"
+    });
+
+    // Agenda
+    gsap.from("#agenda .agenda-line > div", {
+        scrollTrigger: { trigger: "#agenda .agenda-line", start: "top 80%" },
+        x: -30,
+        opacity: 0,
+        duration: 0.6,
+        stagger: 0.1,
+        ease: "power3.out"
+    });
+
+    // FAQs
+    gsap.from("#faq .faq-item", {
+        scrollTrigger: { trigger: "#faq", start: "top 80%" },
+        y: 30,
+        opacity: 0,
+        duration: 0.6,
+        stagger: 0.08,
+        ease: "power3.out"
+    });
+
+    // 7. Deadlines
+    gsap.from("#deadlines .flex-col > .flex", {
+        scrollTrigger: { trigger: "#deadlines", start: "top 75%" },
+        x: -40,
+        opacity: 0,
+        duration: 0.8,
+        stagger: 0.15,
+        ease: "power3.out"
+    });
+    gsap.from("#deadlines .bg-primary", {
+        scrollTrigger: { trigger: "#deadlines", start: "top 75%" },
+        x: 60,
+        opacity: 0,
+        duration: 1,
+        ease: "power3.out"
+    });
+
+    // 8. Contact Parallax & Fade
+    gsap.from("#contact .grid > div:first-child", {
+        scrollTrigger: { trigger: "#contact", start: "top 75%" },
+        y: 50,
+        opacity: 0,
+        duration: 1,
+        ease: "power3.out"
+    });
+    gsap.to("#contact img", {
+        yPercent: 15,
+        opacity: 0.8,
+        ease: "none",
+        scrollTrigger: {
+            trigger: "#contact",
+            start: "top bottom", 
+            end: "bottom top",
+            scrub: true
+        }
+    });
+    
+    // Navbar Dynamic Blur
+    const nav = document.querySelector('nav');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const mobileMenuButton = document.getElementById('mobile-menu-button');
+    const mobileMenuLinks = mobileMenu ? mobileMenu.querySelectorAll('a') : [];
+    const setNavState = () => {
+        if (window.scrollY > 50) {
+            nav.classList.add('backdrop-blur-md', 'bg-neutral-950/80', 'border-b', 'border-white/10');
+            nav.classList.remove('bg-neutral-950/90', 'border-none', 'backdrop-blur-none');
+        } else {
+            nav.classList.remove('backdrop-blur-md', 'bg-neutral-950/80', 'border-b', 'border-white/10');
+            nav.classList.add('bg-neutral-950/90', 'border-none', 'backdrop-blur-none');
+        }
+    };
+    let navTicking = false;
+    window.addEventListener('scroll', () => {
+        if (!navTicking) {
+            window.requestAnimationFrame(() => {
+                setNavState();
+                navTicking = false;
+            });
+            navTicking = true;
+        }
+    }, { passive: true });
+    setNavState();
+
+    if (mobileMenu && mobileMenuButton) {
+        const closeMobileMenu = () => {
+            mobileMenu.classList.add('hidden');
+            mobileMenuButton.setAttribute('aria-expanded', 'false');
+            document.body.classList.remove('mobile-nav-open');
+        };
+        const openMobileMenu = () => {
+            mobileMenu.classList.remove('hidden');
+            mobileMenuButton.setAttribute('aria-expanded', 'true');
+            document.body.classList.add('mobile-nav-open');
+        };
+        mobileMenuButton.addEventListener('click', () => {
+            const isExpanded = mobileMenuButton.getAttribute('aria-expanded') === 'true';
+            if (isExpanded) {
+                closeMobileMenu();
+            } else {
+                openMobileMenu();
+            }
+        });
+        mobileMenuLinks.forEach((link) => {
+            link.addEventListener('click', closeMobileMenu);
+        });
+        window.addEventListener('resize', () => {
+            if (window.innerWidth >= 1024) {
+                closeMobileMenu();
+            }
+        });
+    }
+
+    // About Section Accordion Logic (GSAP)
+    const accordions = document.querySelectorAll('.accordion-item');
+    if(accordions.length > 0) {
+        const firstAcc = accordions[0];
+        const firstContent = firstAcc.querySelector('.accordion-content');
+        const firstTrigger = firstAcc.querySelector('.accordion-trigger');
+        firstAcc.classList.add('active');
+        if (firstTrigger) {
+            firstTrigger.setAttribute('aria-expanded', 'true');
+        }
+        gsap.set(firstContent, { height: "auto" });
+    }
+
+    accordions.forEach((acc, index) => {
+        gsap.from(acc, {
+            scrollTrigger: {
+                trigger: ".about-accordion",
+                start: "top 80%"
+            },
+            y: 40,
+            opacity: 0,
+            duration: 0.8,
+            delay: index * 0.15,
+            ease: "power3.out"
+        });
+
+        const header = acc.querySelector('.accordion-trigger');
+        if(header) {
+            header.addEventListener('click', () => {
+                const content = acc.querySelector('.accordion-content');
+                const isActive = acc.classList.contains('active');
+                
+                accordions.forEach(a => {
+                    if(a !== acc) {
+                        a.classList.remove('active');
+                        const trigger = a.querySelector('.accordion-trigger');
+                        if (trigger) trigger.setAttribute('aria-expanded', 'false');
+                        gsap.to(a.querySelector('.accordion-content'), { height: 0, duration: 0.6, ease: 'power3.inOut' });
+                    }
+                });
+
+                if (!isActive) {
+                    acc.classList.add('active');
+                    header.setAttribute('aria-expanded', 'true');
+                    gsap.set(content, { height: "auto" });
+                    const height = content.offsetHeight;
+                    gsap.fromTo(content, { height: 0 }, { height: height, duration: 0.6, ease: 'power3.inOut' });
+                } else {
+                    acc.classList.remove('active');
+                    header.setAttribute('aria-expanded', 'false');
+                    gsap.to(content, { height: 0, duration: 0.6, ease: 'power3.inOut' });
+                }
+            });
+        }
+    });
+
+    // Advisory card shape morph
+    const advisoryCards = document.querySelectorAll('.advisory-card');
+    advisoryCards.forEach((card) => {
+        const shape = card.querySelector('path');
+        if (!shape) return;
+        const expandShape = () => shape.setAttribute('d', 'M 0 0 L 100 0 L 100 100 Q 50 100 0 100 Z');
+        const collapseShape = () => shape.setAttribute('d', 'M 0 0 L 100 0 L 100 0 Q 50 -100 0 0 Z');
+        card.addEventListener('mouseenter', expandShape);
+        card.addEventListener('mouseleave', collapseShape);
+        card.addEventListener('focus', expandShape);
+        card.addEventListener('blur', collapseShape);
+    });
+
+    // FAQ Accordion
+    document.querySelectorAll('.faq-item').forEach(item => {
+        const btn = item.querySelector('.faq-trigger');
+        const answer = item.querySelector('.faq-answer');
+        const icon = item.querySelector('.faq-icon');
+        if (!btn || !answer) return;
+        btn.addEventListener('click', () => {
+            const isOpen = answer.style.height !== '0px' && answer.style.height !== '';
+            // close all
+            document.querySelectorAll('.faq-item').forEach(other => {
+                const otherAnswer = other.querySelector('.faq-answer');
+                const otherIcon = other.querySelector('.faq-icon');
+                if (otherAnswer) gsap.to(otherAnswer, { height: 0, duration: 0.5, ease: 'power3.inOut' });
+                if (otherIcon) otherIcon.style.transform = 'rotate(0deg)';
+            });
+            if (!isOpen) {
+                gsap.set(answer, { height: 'auto' });
+                const h = answer.offsetHeight;
+                gsap.fromTo(answer, { height: 0 }, { height: h, duration: 0.5, ease: 'power3.inOut' });
+                if (icon) icon.style.transform = 'rotate(180deg)';
+            }
+        });
+    });
+
+});
+</script>
+
+<div class="section-divider" aria-hidden="true"></div>
+
+<!-- Keynote Speakers / Advisory -->
+<section id="advisors" class="bg-background py-32 px-8 overflow-hidden">
+<div class="max-w-7xl mx-auto">
+<div class="flex flex-col md:flex-row justify-between items-end mb-20 gap-8">
+<div>
+<h2 class="font-headline text-5xl md:text-7xl font-normal uppercase tracking-wide mb-4">Distinguished<br/><span class="text-primary">Advisors</span></h2>
+<p class="font-label text-on-surface-variant tracking-[0.1em] text-sm uppercase">Global Expertise in Production &amp; Automation</p>
+</div>
+<div class="hidden md:block">
+<div class="w-32 h-px bg-primary"></div>
+</div>
+</div>
+<style>
+.shape-morph path {
+    transition: d 0.8s cubic-bezier(0.77, 0, 0.175, 1);
+}
+</style>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-px bg-outline-variant/30 border border-outline-variant/30 relative">
+    
+    <!-- Speaker 1 -->
+    <div class="advisory-card group relative min-h-[500px] overflow-hidden cursor-pointer bg-[#0e0e10]" tabindex="0" role="figure" aria-label="Dr. Vamsi Krishna – National Advisory">
+        <div class="absolute inset-0 z-0">
+             <img alt="Portrait of Dr. Vamsi Krishna" class="w-full h-full object-cover opacity-90 group-hover:scale-105 transition-transform duration-[1.2s] ease-out" decoding="async" loading="lazy" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAYL612FF8-xP2TL3lVtSWAyJCxp5jWSDQuYvyzcVzYqZdtdPhVn1ksvUxko2ZB-r67bT7RMhQRw7cJDEvjV7ustQZhVb7q7RAn6uEYeP_-qyp7aYcwQ0n-HF_dCp-5f4jTvnqQfmIjyHxbgjqhgYyq_lss9nmxxY8gA_T29s_5kfu-Hj8x_X-AZccf8vYw41hCdwS6JzHakgSXt_D6sW0ori7c-Yon_P2xLE2W466kH32o1XCtEKla6QiZ39ToBR7ZEXt8cAhJ_YD1"/>
+             <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-black/20"></div>
+        </div>
+        <div class="absolute inset-0 z-[5] p-8 flex flex-col justify-between items-start pointer-events-none">
+            <span class="font-label bg-black/50 backdrop-blur-md px-3 py-1 rounded-full text-white text-[10px] font-bold uppercase tracking-widest border border-white/10 group-hover:opacity-0 transition-opacity duration-300">National Advisory</span>
+        </div>
+        <div class="absolute inset-0 z-10 pointer-events-none">
+            <svg class="absolute inset-0 w-full h-full text-[#2563EB] shape-morph" preserveAspectRatio="none" viewBox="0 0 100 100">
+                <path fill="currentColor" d="M 0 0 L 100 0 L 100 0 Q 50 -100 0 0 Z" />
+            </svg>
+        </div>
+        <div class="absolute inset-0 p-10 flex flex-col justify-center items-center text-center z-20 pointer-events-none">
+            <h3 class="font-headline text-3xl lg:text-4xl text-white mb-4 transform translate-y-8 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-700 ease-[cubic-bezier(0.77,0,0.175,1)] delay-100">DR. VAMSI KRISHNA</h3>
+            <p class="font-label text-white/90 tracking-widest text-sm uppercase transform translate-y-8 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-700 delay-[150ms] ease-[cubic-bezier(0.77,0,0.175,1)]">CSIR</p>
+        </div>
+    </div>
+
+    <!-- Speaker 2 -->
+    <div class="advisory-card group relative min-h-[500px] overflow-hidden cursor-pointer bg-[#0e0e10]" tabindex="0" role="figure" aria-label="Prof. Ille C. Gebeshuber – Intl. Advisory">
+        <div class="absolute inset-0 z-0">
+             <img alt="Portrait of Professor Ille C. Gebeshuber" class="w-full h-full object-cover opacity-90 group-hover:scale-105 transition-transform duration-[1.2s] ease-out" decoding="async" loading="lazy" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBoLT9skCDti8Dlsl5Sklke4JXgmCn2Yuzar_J7REkMF1_Y0wBhenWYQzV-6SGrjIX6cgudvqandifdcZk2ANURHFa3_ccO0tC4pwWWtiqCMfwJdpEty46IIuqu8CeRAuVcPd7uuNaek3-T63_7L9xgWR30kkMaokakvI-11VnANz2JA0qWkVoON7-j4GiSJgvbHRSPNFMAa09uzyMXcDMSJgosnHbtH81NZtQAR-9LKOrRUwMnPNp7pk9J5fs2oVUMNAjM49ujXkh_"/>
+             <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-black/20"></div>
+        </div>
+        <div class="absolute inset-0 z-[5] p-8 flex flex-col justify-between items-start pointer-events-none">
+            <span class="font-label bg-black/50 backdrop-blur-md px-3 py-1 rounded-full text-white text-[10px] font-bold uppercase tracking-widest border border-white/10 group-hover:opacity-0 transition-opacity duration-300">Intl. Advisory</span>
+        </div>
+        <div class="absolute inset-0 z-10 pointer-events-none">
+            <svg class="absolute inset-0 w-full h-full text-[#7C3AED] shape-morph" preserveAspectRatio="none" viewBox="0 0 100 100">
+                <path fill="currentColor" d="M 0 0 L 100 0 L 100 0 Q 50 -100 0 0 Z" />
+            </svg>
+        </div>
+        <div class="absolute inset-0 p-10 flex flex-col justify-center items-center text-center z-20 pointer-events-none">
+            <h3 class="font-headline text-3xl lg:text-4xl text-white mb-4 transform translate-y-8 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-700 ease-[cubic-bezier(0.77,0,0.175,1)] delay-100">PROF. ILLE C.<br/>GEBESHUBER</h3>
+            <p class="font-label text-white/90 tracking-widest text-sm uppercase transform translate-y-8 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-700 delay-[150ms] ease-[cubic-bezier(0.77,0,0.175,1)]">Vienna University of Technology</p>
+        </div>
+    </div>
+
+    <!-- Speaker 3 -->
+    <div class="advisory-card group relative min-h-[500px] overflow-hidden cursor-pointer bg-[#0e0e10]" tabindex="0" role="figure" aria-label="Prof. Manoj Gupta – Intl. Advisory">
+        <div class="absolute inset-0 z-0">
+             <img alt="Portrait of Professor Manoj Gupta" class="w-full h-full object-cover opacity-90 group-hover:scale-105 transition-transform duration-[1.2s] ease-out" decoding="async" loading="lazy" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBIVXKklyyrpVo4yRhpbPG1MI2hkez8eiWW-1XwvUiv-X3bVrJXF095qIDKGUo7GAPSzuWfOdoYeR0mjFpbRiQH4E9U6ZsknFXpNpwEOp8Z36XY8zbECHoS4wr4SyeX8-lM-R-WsWXrCvEjMqmNN7-Xf7Vg547SJcfxkM11L6yZPnq45sG2zxMNXWlYYp1u-FPxo_RUlTpSut1cgLq-jXspRpJmIsCF3HrOHN2RqzyDV-4tXigMZNUIP39q3xuEqlC84ZsmLmtbDwlv"/>
+             <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-black/20"></div>
+        </div>
+        <div class="absolute inset-0 z-[5] p-8 flex flex-col justify-between items-start pointer-events-none">
+            <span class="font-label bg-black/50 backdrop-blur-md px-3 py-1 rounded-full text-white text-[10px] font-bold uppercase tracking-widest border border-white/10 group-hover:opacity-0 transition-opacity duration-300">Intl. Advisory</span>
+        </div>
+        <div class="absolute inset-0 z-10 pointer-events-none">
+            <svg class="absolute inset-0 w-full h-full text-[#DB2777] shape-morph" preserveAspectRatio="none" viewBox="0 0 100 100">
+                <path fill="currentColor" d="M 0 0 L 100 0 L 100 0 Q 50 -100 0 0 Z" />
+            </svg>
+        </div>
+        <div class="absolute inset-0 p-10 flex flex-col justify-center items-center text-center z-20 pointer-events-none">
+            <h3 class="font-headline text-3xl lg:text-4xl text-white mb-4 transform translate-y-8 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-700 ease-[cubic-bezier(0.77,0,0.175,1)] delay-100">PROF. MANOJ GUPTA</h3>
+            <p class="font-label text-white/90 tracking-widest text-sm uppercase transform translate-y-8 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-700 delay-[150ms] ease-[cubic-bezier(0.77,0,0.175,1)]">Nat. University of Singapore</p>
+        </div>
+    </div>
+</div>
+</div>
+</section>
+
+<div class="section-divider" aria-hidden="true"></div>
+
+<!-- For Authors Section -->
+<section id="for-authors" class="bg-background py-32 px-8">
+    <div class="max-w-7xl mx-auto">
+        <h2 class="font-headline text-5xl md:text-7xl font-normal uppercase tracking-wide mb-8">For <span class="text-primary">Authors</span></h2>
+        <p class="font-body text-lg text-on-surface-variant max-w-3xl mb-16 leading-relaxed">
+            High quality research papers are invited in various areas. After peer review process, all the accepted and presented papers will be published in Scopus indexed proceedings / journals.
+        </p>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-y-6 gap-x-12 mb-16">
+            <div class="flex items-center gap-3"><span class="w-2 h-2 bg-primary rounded-full"></span><span class="font-label text-sm uppercase tracking-wider text-white">Sustainable Manufacturing</span></div>
+            <div class="flex items-center gap-3"><span class="w-2 h-2 bg-primary rounded-full"></span><span class="font-label text-sm uppercase tracking-wider text-white">Additive Manufacturing</span></div>
+            <div class="flex items-center gap-3"><span class="w-2 h-2 bg-primary rounded-full"></span><span class="font-label text-sm uppercase tracking-wider text-white">Smart Manufacturing</span></div>
+            <div class="flex items-center gap-3"><span class="w-2 h-2 bg-primary rounded-full"></span><span class="font-label text-sm uppercase tracking-wider text-white">Industry 4.0 and 5.0</span></div>
+            <div class="flex items-center gap-3"><span class="w-2 h-2 bg-primary rounded-full"></span><span class="font-label text-sm uppercase tracking-wider text-white">Cyber-Physical Systems</span></div>
+            <div class="flex items-center gap-3"><span class="w-2 h-2 bg-primary rounded-full"></span><span class="font-label text-sm uppercase tracking-wider text-white">Automation and Smart Systems</span></div>
+            <div class="flex items-center gap-3"><span class="w-2 h-2 bg-primary rounded-full"></span><span class="font-label text-sm uppercase tracking-wider text-white">AI and ML in Manufacturing</span></div>
+            <div class="flex items-center gap-3"><span class="w-2 h-2 bg-primary rounded-full"></span><span class="font-label text-sm uppercase tracking-wider text-white">Hybrid Manufacturing</span></div>
+            <div class="flex items-center gap-3"><span class="w-2 h-2 bg-primary rounded-full"></span><span class="font-label text-sm uppercase tracking-wider text-white">Digital Manufacturing</span></div>
+            <div class="flex items-center gap-3"><span class="w-2 h-2 bg-primary rounded-full"></span><span class="font-label text-sm uppercase tracking-wider text-white">Micro and Nano Manufacturing</span></div>
+            <div class="flex items-center gap-3"><span class="w-2 h-2 bg-primary rounded-full"></span><span class="font-label text-sm uppercase tracking-wider text-white">Manufacturing Modelling</span></div>
+            <div class="flex items-center gap-3"><span class="w-2 h-2 bg-primary rounded-full"></span><span class="font-label text-sm uppercase tracking-wider text-white">Advanced Machining</span></div>
+            <div class="flex items-center gap-3"><span class="w-2 h-2 bg-primary rounded-full"></span><span class="font-label text-sm uppercase tracking-wider text-white">Joining & Forming Technologies</span></div>
+            <div class="flex items-center gap-3"><span class="w-2 h-2 bg-primary rounded-full"></span><span class="font-label text-sm uppercase tracking-wider text-white">Processing of Composites</span></div>
+            <div class="flex items-center gap-3"><span class="w-2 h-2 bg-primary rounded-full"></span><span class="font-label text-sm uppercase tracking-wider text-white">Energy Beam Processing</span></div>
+            <div class="flex items-center gap-3"><span class="w-2 h-2 bg-primary rounded-full"></span><span class="font-label text-sm uppercase tracking-wider text-white">Surface Engineering</span></div>
+            <div class="flex items-center gap-3"><span class="w-2 h-2 bg-primary rounded-full"></span><span class="font-label text-sm uppercase tracking-wider text-white">Metrology and Quality</span></div>
+            <div class="flex items-center gap-3"><span class="w-2 h-2 bg-primary rounded-full"></span><span class="font-label text-sm uppercase tracking-wider text-white">Robotics and Automation</span></div>
+        </div>
+    </div>
+</section>
+
+<div class="section-divider" aria-hidden="true"></div>
+
+<!-- Conference Pass Pricing Section -->
+<section id="pricing" class="bg-background py-32 px-8">
+    <div class="max-w-7xl mx-auto">
+        <div class="text-center mb-20">
+            <span class="font-label text-primary uppercase tracking-[0.3em] text-[10px] font-black mb-4 block">Registration Fee</span>
+            <h2 class="font-headline text-5xl md:text-7xl font-normal uppercase tracking-wide mb-4">Conference <span class="text-primary">Pass</span></h2>
+            <p class="font-body text-on-surface-variant text-base max-w-xl mx-auto leading-relaxed">All fees inclusive of 18% GST. Early bird registration closes October 15, 2026.</p>
+        </div>
+
+        <!-- National Delegates -->
+        <h3 class="font-headline text-3xl uppercase text-white mb-2">National <span class="text-primary">Delegates</span></h3>
+        <p class="font-label text-on-surface-variant text-xs uppercase tracking-widest mb-10">Prices in Indian Rupees (₹)</p>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-20">
+            <!-- Student -->
+            <div class="pricing-card bg-white/[0.03] border border-white/10 p-8 flex flex-col">
+                <span class="font-label text-primary uppercase tracking-widest text-[10px] font-bold mb-4">PG / UG Student</span>
+                <div class="mb-6">
+                    <span class="font-headline text-4xl text-white">₹525</span>
+                    <span class="font-body text-on-surface-variant text-xs block mt-1">Early Bird (up to 15 Oct 2026)</span>
+                </div>
+                <div class="mb-8">
+                    <span class="font-headline text-2xl text-white/60">₹750</span>
+                    <span class="font-body text-on-surface-variant text-xs block mt-1">Regular (16 Oct – 15 Dec 2026)</span>
+                </div>
+                <div class="mt-auto pt-6 border-t border-white/10 flex flex-col gap-2">
+                    <span class="font-body text-xs text-on-surface-variant flex items-center gap-2"><span class="material-symbols-outlined text-primary text-sm">check_circle</span>Conference access — both days</span>
+                    <span class="font-body text-xs text-on-surface-variant flex items-center gap-2"><span class="material-symbols-outlined text-primary text-sm">check_circle</span>Conference kit & materials</span>
+                    <span class="font-body text-xs text-on-surface-variant flex items-center gap-2"><span class="material-symbols-outlined text-primary text-sm">check_circle</span>Certificate of participation</span>
+                </div>
+            </div>
+            <!-- Research Scholar -->
+            <div class="pricing-card bg-white/[0.03] border border-white/10 p-8 flex flex-col">
+                <span class="font-label text-primary uppercase tracking-widest text-[10px] font-bold mb-4">Research Scholar</span>
+                <div class="mb-6">
+                    <span class="font-headline text-4xl text-white">₹700</span>
+                    <span class="font-body text-on-surface-variant text-xs block mt-1">Early Bird (up to 15 Oct 2026)</span>
+                </div>
+                <div class="mb-8">
+                    <span class="font-headline text-2xl text-white/60">₹1,000</span>
+                    <span class="font-body text-on-surface-variant text-xs block mt-1">Regular (16 Oct – 15 Dec 2026)</span>
+                </div>
+                <div class="mt-auto pt-6 border-t border-white/10 flex flex-col gap-2">
+                    <span class="font-body text-xs text-on-surface-variant flex items-center gap-2"><span class="material-symbols-outlined text-primary text-sm">check_circle</span>Conference access — both days</span>
+                    <span class="font-body text-xs text-on-surface-variant flex items-center gap-2"><span class="material-symbols-outlined text-primary text-sm">check_circle</span>Paper presentation slot</span>
+                    <span class="font-body text-xs text-on-surface-variant flex items-center gap-2"><span class="material-symbols-outlined text-primary text-sm">check_circle</span>Publication in proceedings</span>
+                    <span class="font-body text-xs text-on-surface-variant flex items-center gap-2"><span class="material-symbols-outlined text-primary text-sm">check_circle</span>Certificate of presentation</span>
+                </div>
+            </div>
+            <!-- Industry / Academic — featured -->
+            <div class="pricing-card bg-primary/[0.06] border-2 border-primary/40 p-8 flex flex-col relative">
+                <span class="absolute -top-3 left-8 font-label text-[9px] font-black uppercase tracking-widest bg-primary text-on-primary px-3 py-1">Most Popular</span>
+                <span class="font-label text-primary uppercase tracking-widest text-[10px] font-bold mb-4">Industry / Academic</span>
+                <div class="mb-6">
+                    <span class="font-headline text-4xl text-white">₹2,625</span>
+                    <span class="font-body text-on-surface-variant text-xs block mt-1">Early Bird (up to 15 Oct 2026)</span>
+                </div>
+                <div class="mb-8">
+                    <span class="font-headline text-2xl text-white/60">₹3,500</span>
+                    <span class="font-body text-on-surface-variant text-xs block mt-1">Regular (16 Oct – 15 Dec 2026)</span>
+                </div>
+                <div class="mt-auto pt-6 border-t border-white/10 flex flex-col gap-2">
+                    <span class="font-body text-xs text-on-surface-variant flex items-center gap-2"><span class="material-symbols-outlined text-primary text-sm">check_circle</span>Full conference access</span>
+                    <span class="font-body text-xs text-on-surface-variant flex items-center gap-2"><span class="material-symbols-outlined text-primary text-sm">check_circle</span>Paper presentation slot</span>
+                    <span class="font-body text-xs text-on-surface-variant flex items-center gap-2"><span class="material-symbols-outlined text-primary text-sm">check_circle</span>Scopus-indexed publication</span>
+                    <span class="font-body text-xs text-on-surface-variant flex items-center gap-2"><span class="material-symbols-outlined text-primary text-sm">check_circle</span>Networking lunch & refreshments</span>
+                    <span class="font-body text-xs text-on-surface-variant flex items-center gap-2"><span class="material-symbols-outlined text-primary text-sm">check_circle</span>Conference proceedings copy</span>
+                </div>
+            </div>
+            <!-- Accompanying Person -->
+            <div class="pricing-card bg-white/[0.03] border border-white/10 p-8 flex flex-col">
+                <span class="font-label text-primary uppercase tracking-widest text-[10px] font-bold mb-4">Accompanying Person</span>
+                <div class="mb-6">
+                    <span class="font-headline text-4xl text-white">₹1,500</span>
+                    <span class="font-body text-on-surface-variant text-xs block mt-1">Early Bird (up to 15 Oct 2026)</span>
+                </div>
+                <div class="mb-8">
+                    <span class="font-headline text-2xl text-white/60">₹2,000</span>
+                    <span class="font-body text-on-surface-variant text-xs block mt-1">Regular (16 Oct – 15 Dec 2026)</span>
+                </div>
+                <div class="mt-auto pt-6 border-t border-white/10 flex flex-col gap-2">
+                    <span class="font-body text-xs text-on-surface-variant flex items-center gap-2"><span class="material-symbols-outlined text-primary text-sm">check_circle</span>Conference venue access</span>
+                    <span class="font-body text-xs text-on-surface-variant flex items-center gap-2"><span class="material-symbols-outlined text-primary text-sm">check_circle</span>Lunch & refreshments</span>
+                    <span class="font-body text-xs text-on-surface-variant flex items-center gap-2"><span class="material-symbols-outlined text-primary text-sm">check_circle</span>Campus tour</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- International Delegates -->
+        <h3 class="font-headline text-3xl uppercase text-white mb-2">International <span class="text-primary">Delegates</span></h3>
+        <p class="font-label text-on-surface-variant text-xs uppercase tracking-widest mb-10">Prices in US Dollars ($)</p>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div class="pricing-card bg-white/[0.03] border border-white/10 p-8 flex flex-col">
+                <span class="font-label text-secondary uppercase tracking-widest text-[10px] font-bold mb-4">PG / UG Student</span>
+                <div class="mb-4"><span class="font-headline text-4xl text-white">$70</span><span class="font-body text-on-surface-variant text-xs block mt-1">Early Bird</span></div>
+                <div><span class="font-headline text-2xl text-white/60">$100</span><span class="font-body text-on-surface-variant text-xs block mt-1">Regular</span></div>
+            </div>
+            <div class="pricing-card bg-white/[0.03] border border-white/10 p-8 flex flex-col">
+                <span class="font-label text-secondary uppercase tracking-widest text-[10px] font-bold mb-4">Research Scholar</span>
+                <div class="mb-4"><span class="font-headline text-4xl text-white">$105</span><span class="font-body text-on-surface-variant text-xs block mt-1">Early Bird</span></div>
+                <div><span class="font-headline text-2xl text-white/60">$150</span><span class="font-body text-on-surface-variant text-xs block mt-1">Regular</span></div>
+            </div>
+            <div class="pricing-card bg-white/[0.03] border border-white/10 p-8 flex flex-col">
+                <span class="font-label text-secondary uppercase tracking-widest text-[10px] font-bold mb-4">Industry / Academic</span>
+                <div class="mb-4"><span class="font-headline text-4xl text-white">$263</span><span class="font-body text-on-surface-variant text-xs block mt-1">Early Bird</span></div>
+                <div><span class="font-headline text-2xl text-white/60">$350</span><span class="font-body text-on-surface-variant text-xs block mt-1">Regular</span></div>
+            </div>
+            <div class="pricing-card bg-white/[0.03] border border-white/10 p-8 flex flex-col">
+                <span class="font-label text-secondary uppercase tracking-widest text-[10px] font-bold mb-4">Accompanying Person</span>
+                <div class="mb-4"><span class="font-headline text-4xl text-white">$150</span><span class="font-body text-on-surface-variant text-xs block mt-1">Early Bird</span></div>
+                <div><span class="font-headline text-2xl text-white/60">$200</span><span class="font-body text-on-surface-variant text-xs block mt-1">Regular</span></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="section-divider" aria-hidden="true"></div>
+
+<!-- Agenda at a Glance -->
+<section id="agenda" class="bg-background py-32 px-8">
+    <div class="max-w-6xl mx-auto">
+
+        <!-- Day 1 -->
+        <div class="flex items-center gap-3 mb-2">
+            <span class="w-3 h-3 bg-primary rounded-sm"></span>
+            <span class="font-label text-primary uppercase tracking-widest text-xs font-bold">Day 1</span>
+        </div>
+        <h3 class="font-headline text-4xl md:text-5xl text-white uppercase tracking-wide mb-10">January 22, 2027</h3>
+
+        <div class="agenda-row">
+            <div class="agenda-time-cell">
+                <span class="font-body text-on-surface-variant text-sm">08:30 – 09:30</span>
+            </div>
+            <div class="agenda-event-cell">
+                <h4 class="font-headline text-lg text-white uppercase">Registration &amp; Welcome Kit</h4>
+            </div>
+        </div>
+        <div class="agenda-row">
+            <div class="agenda-time-cell">
+                <span class="font-body text-on-surface-variant text-sm">09:30 – 10:30</span>
+            </div>
+            <div class="agenda-event-cell">
+                <h4 class="font-headline text-lg text-white uppercase">Inauguration Ceremony</h4>
+                <p class="font-body text-sm text-on-surface-variant mt-1">Lamp lighting, welcome address &amp; chief guest addresses</p>
+            </div>
+        </div>
+        <div class="agenda-row">
+            <div class="agenda-time-cell">
+                <span class="font-body text-on-surface-variant text-sm">10:45 – 12:30</span>
+            </div>
+            <div class="agenda-event-cell">
+                <h4 class="font-headline text-lg text-white uppercase">Keynote Sessions I</h4>
+                <p class="font-body text-sm text-on-surface-variant mt-1">Industry 5.0 &amp; sustainable manufacturing talks</p>
+            </div>
+        </div>
+        <div class="agenda-row">
+            <div class="agenda-time-cell">
+                <span class="font-body text-on-surface-variant text-sm">12:30 – 13:30</span>
+            </div>
+            <div class="agenda-event-cell">
+                <h4 class="font-headline text-lg text-white uppercase">Networking Lunch</h4>
+            </div>
+        </div>
+        <div class="agenda-row">
+            <div class="agenda-time-cell">
+                <span class="font-body text-on-surface-variant text-sm">13:30 – 17:00</span>
+            </div>
+            <div class="agenda-event-cell">
+                <h4 class="font-headline text-lg text-white uppercase">Paper Presentations — Track A &amp; B</h4>
+                <p class="font-body text-sm text-on-surface-variant mt-1">Parallel sessions with tea break at 15:30</p>
+            </div>
+        </div>
+
+        <!-- Spacer -->
+        <div class="mt-24 mb-0"></div>
+
+        <!-- Day 2 -->
+        <div class="flex items-center gap-3 mb-2">
+            <span class="w-3 h-3 bg-secondary rounded-sm"></span>
+            <span class="font-label text-secondary uppercase tracking-widest text-xs font-bold">Day 2</span>
+        </div>
+        <h3 class="font-headline text-4xl md:text-5xl text-white uppercase tracking-wide mb-10">January 23, 2027</h3>
+
+        <div class="agenda-row">
+            <div class="agenda-time-cell">
+                <span class="font-body text-on-surface-variant text-sm">09:00 – 10:30</span>
+            </div>
+            <div class="agenda-event-cell">
+                <h4 class="font-headline text-lg text-white uppercase">Keynote Sessions II</h4>
+                <p class="font-body text-sm text-on-surface-variant mt-1">AI &amp; ML in manufacturing, additive manufacturing insights</p>
+            </div>
+        </div>
+        <div class="agenda-row">
+            <div class="agenda-time-cell">
+                <span class="font-body text-on-surface-variant text-sm">10:45 – 12:30</span>
+            </div>
+            <div class="agenda-event-cell">
+                <h4 class="font-headline text-lg text-white uppercase">Paper Presentations — Track C &amp; D</h4>
+            </div>
+        </div>
+        <div class="agenda-row">
+            <div class="agenda-time-cell">
+                <span class="font-body text-on-surface-variant text-sm">12:30 – 13:30</span>
+            </div>
+            <div class="agenda-event-cell">
+                <h4 class="font-headline text-lg text-white uppercase">Lunch &amp; Lab Visit</h4>
+                <p class="font-body text-sm text-on-surface-variant mt-1">Optional tour of Production Technology laboratories</p>
+            </div>
+        </div>
+        <div class="agenda-row">
+            <div class="agenda-time-cell">
+                <span class="font-body text-on-surface-variant text-sm">13:30 – 15:00</span>
+            </div>
+            <div class="agenda-event-cell">
+                <h4 class="font-headline text-lg text-white uppercase">Panel Discussion &amp; Poster Session</h4>
+            </div>
+        </div>
+        <div class="agenda-row">
+            <div class="agenda-time-cell">
+                <span class="font-body text-on-surface-variant text-sm">15:00 – 16:30</span>
+            </div>
+            <div class="agenda-event-cell">
+                <h4 class="font-headline text-lg text-white uppercase">Valedictory &amp; Best Paper Awards</h4>
+                <p class="font-body text-sm text-on-surface-variant mt-1">Closing address, awards &amp; certificate distribution</p>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<div class="section-divider" aria-hidden="true"></div>
+
+<!-- Important Dates -->
+<section id="deadlines" class="bg-background py-32 px-8">
+<div class="max-w-7xl mx-auto flex flex-col lg:flex-row gap-20">
+<div class="lg:w-1/3">
+<h2 class="font-headline text-5xl font-normal uppercase mb-8">Submission <br/>Deadlines</h2>
+<div class="flex flex-col gap-12">
+<div class="flex items-start gap-6">
+<span class="text-primary font-headline text-3xl font-normal">01</span>
+<div>
+<p class="font-label text-on-surface-variant uppercase tracking-widest text-[10px] mb-2">Abstract Submission</p>
+<p class="font-headline text-2xl font-normal">15 JULY 2026</p>
+</div>
+</div>
+<div class="flex items-start gap-6">
+<span class="text-primary font-headline text-3xl font-normal">02</span>
+<div>
+<p class="font-label text-on-surface-variant uppercase tracking-widest text-[10px] mb-2">Acceptance Notification</p>
+<p class="font-headline text-2xl font-normal">31 AUGUST 2026</p>
+</div>
+</div>
+<div class="flex items-start gap-6">
+<span class="text-primary font-headline text-3xl font-normal">03</span>
+<div>
+<p class="font-label text-on-surface-variant uppercase tracking-widest text-[10px] mb-2">Camera Ready Paper</p>
+<p class="font-headline text-2xl font-normal">30 SEPTEMBER 2026</p>
+</div>
+</div>
+</div>
+</div>
+<div class="lg:w-2/3 bg-primary p-12 lg:p-20 flex flex-col justify-between">
+<div class="max-w-md">
+<h3 class="font-headline text-black text-5xl font-normal uppercase mb-6 leading-none">Submit your research</h3>
+<p class="font-body text-on-primary text-lg font-medium leading-relaxed mb-10">
+                        Join the forefront of manufacturing innovation at RIPE 2027. We welcome original contributions in sustainable manufacturing, Industry 5.0, robotics, and advanced production systems.
+                    </p>
+</div>
+<div>
+<a class="bg-black text-white px-12 py-5 font-headline font-normal text-xl tracking-wide uppercase transition-all hover:bg-neutral-900 flex items-center gap-4 w-fit" download="" href="./RIPE%20Brochure%2004.04.2026.pptx">
+                        Download Brochure
+                        <span class="material-symbols-outlined text-sm">download</span>
+</a>
+</div>
+</div>
+</div>
+</section>
+
+<div class="section-divider" aria-hidden="true"></div>
+
+<!-- FAQs Section -->
+<section id="faq" class="bg-background py-32 px-8">
+    <div class="max-w-4xl mx-auto">
+        <div class="text-center mb-20">
+            <span class="font-label text-primary uppercase tracking-[0.3em] text-[10px] font-black mb-4 block">Got Questions?</span>
+            <h2 class="font-headline text-5xl md:text-7xl font-normal uppercase tracking-wide">Frequently Asked <span class="text-primary">Questions</span></h2>
+        </div>
+
+        <div class="flex flex-col gap-0 border-t border-white/15">
+            <!-- FAQ 1 -->
+            <div class="faq-item border-b border-white/15">
+                <button class="faq-trigger w-full py-7 flex items-center justify-between text-left cursor-pointer group" type="button">
+                    <h3 class="font-label text-base md:text-lg text-white font-semibold uppercase tracking-wide pr-8 group-hover:text-primary transition-colors">How do I submit my paper?</h3>
+                    <span class="material-symbols-outlined text-white/50 group-hover:text-primary transition-all duration-500 faq-icon text-2xl flex-shrink-0">expand_more</span>
+                </button>
+                <div class="faq-answer" style="height: 0px;">
+                    <p class="font-body text-on-surface-variant leading-relaxed pb-7 pr-12">Submit your abstract via email to <a href="mailto:ripe2027@mitindia.edu" class="text-primary hover:underline">ripe2027@mitindia.edu</a>. The abstract should be no longer than 300 words and include the title, author details, affiliation, and a list of keywords. After acceptance, full camera-ready papers will be submitted through the same channel.</p>
+                </div>
+            </div>
+            <!-- FAQ 2 -->
+            <div class="faq-item border-b border-white/15">
+                <button class="faq-trigger w-full py-7 flex items-center justify-between text-left cursor-pointer group" type="button">
+                    <h3 class="font-label text-base md:text-lg text-white font-semibold uppercase tracking-wide pr-8 group-hover:text-primary transition-colors">Will accepted papers be published?</h3>
+                    <span class="material-symbols-outlined text-white/50 group-hover:text-primary transition-all duration-500 faq-icon text-2xl flex-shrink-0">expand_more</span>
+                </button>
+                <div class="faq-answer" style="height: 0px;">
+                    <p class="font-body text-on-surface-variant leading-relaxed pb-7 pr-12">Yes. All accepted and presented papers will be published in Scopus-indexed proceedings or Q1/Q2 journals. Specific journal details will be listed on the conference website prior to the submission deadline.</p>
+                </div>
+            </div>
+            <!-- FAQ 3 -->
+            <div class="faq-item border-b border-white/15">
+                <button class="faq-trigger w-full py-7 flex items-center justify-between text-left cursor-pointer group" type="button">
+                    <h3 class="font-label text-base md:text-lg text-white font-semibold uppercase tracking-wide pr-8 group-hover:text-primary transition-colors">Can I attend without presenting a paper?</h3>
+                    <span class="material-symbols-outlined text-white/50 group-hover:text-primary transition-all duration-500 faq-icon text-2xl flex-shrink-0">expand_more</span>
+                </button>
+                <div class="faq-answer" style="height: 0px;">
+                    <p class="font-body text-on-surface-variant leading-relaxed pb-7 pr-12">Absolutely. You can register as a delegate to attend all keynotes, paper presentations, and networking sessions without submitting a paper. Please email the organizing team for a delegate-only registration.</p>
+                </div>
+            </div>
+            <!-- FAQ 4 -->
+            <div class="faq-item border-b border-white/15">
+                <button class="faq-trigger w-full py-7 flex items-center justify-between text-left cursor-pointer group" type="button">
+                    <h3 class="font-label text-base md:text-lg text-white font-semibold uppercase tracking-wide pr-8 group-hover:text-primary transition-colors">Is accommodation arranged by the organizers?</h3>
+                    <span class="material-symbols-outlined text-white/50 group-hover:text-primary transition-all duration-500 faq-icon text-2xl flex-shrink-0">expand_more</span>
+                </button>
+                <div class="faq-answer" style="height: 0px;">
+                    <p class="font-body text-on-surface-variant leading-relaxed pb-7 pr-12">The organizing committee can provide a list of recommended hotels near the MIT Campus, Chromepet, Chennai. Accommodation costs are not included in the registration fee. Reach out to the organizing secretaries for assistance.</p>
+                </div>
+            </div>
+            <!-- FAQ 5 -->
+            <div class="faq-item border-b border-white/15">
+                <button class="faq-trigger w-full py-7 flex items-center justify-between text-left cursor-pointer group" type="button">
+                    <h3 class="font-label text-base md:text-lg text-white font-semibold uppercase tracking-wide pr-8 group-hover:text-primary transition-colors">What does the registration fee include?</h3>
+                    <span class="material-symbols-outlined text-white/50 group-hover:text-primary transition-all duration-500 faq-icon text-2xl flex-shrink-0">expand_more</span>
+                </button>
+                <div class="faq-answer" style="height: 0px;">
+                    <p class="font-body text-on-surface-variant leading-relaxed pb-7 pr-12">The fee covers full conference access for both days, a conference kit (bag, notepad, and materials), lunch, tea/coffee, a certificate of participation or presentation, and access to the conference proceedings. All fees are inclusive of 18% GST.</p>
+                </div>
+            </div>
+            <!-- FAQ 6 -->
+            <div class="faq-item border-b border-white/15">
+                <button class="faq-trigger w-full py-7 flex items-center justify-between text-left cursor-pointer group" type="button">
+                    <h3 class="font-label text-base md:text-lg text-white font-semibold uppercase tracking-wide pr-8 group-hover:text-primary transition-colors">Is there a virtual attendance option?</h3>
+                    <span class="material-symbols-outlined text-white/50 group-hover:text-primary transition-all duration-500 faq-icon text-2xl flex-shrink-0">expand_more</span>
+                </button>
+                <div class="faq-answer" style="height: 0px;">
+                    <p class="font-body text-on-surface-variant leading-relaxed pb-7 pr-12">RIPE 2027 is designed as an in-person event held at the MIT Campus, Anna University, Chennai. However, limited virtual presentation slots may be offered to international delegates on a case-by-case basis. Contact the organizers at <a href="mailto:ripe2027@mitindia.edu" class="text-primary hover:underline">ripe2027@mitindia.edu</a> for more details.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="section-divider" aria-hidden="true"></div>
+
+<!-- Map & Location / Contact -->
+<section id="contact" class="bg-background py-32 px-8">
+<div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-0 border border-outline-variant/30">
+<div class="p-16 lg:p-24 flex flex-col justify-center">
+<span class="font-label text-primary uppercase tracking-[0.3em] text-[10px] font-black mb-8">Venue Partner</span>
+<h2 class="font-headline text-4xl lg:text-5xl font-normal uppercase mb-10 leading-tight">
+                    Madras Institute of <br/> Technology Campus,<br/> Anna University
+                </h2>
+<div class="flex flex-col gap-6 font-label text-on-surface-variant">
+<p class="flex items-center gap-4">
+<span class="material-symbols-outlined text-primary">location_on</span>
+                        Chromepet, Chennai - 600044, India
+                    </p>
+<p class="flex items-center gap-4">
+<span class="material-symbols-outlined text-primary">mail</span>
+                        <a class="hover:text-white transition-colors" href="mailto:ripe2027@mitindia.edu">ripe2027@mitindia.edu</a>
+                    </p>
+<p class="flex items-center gap-4">
+<span class="material-symbols-outlined text-primary">call</span>
+                        <a class="hover:text-white transition-colors" href="tel:+919842735311">+91 98427 35311</a> / <a class="hover:text-white transition-colors" href="tel:+919444430644">+91 94444 30644</a>
+                    </p>
+</div>
+</div>
+<div class="h-[400px] lg:h-auto grayscale bg-surface-bright relative">
+<img alt="Madras Institute of Technology campus" class="w-full h-full object-cover opacity-60" decoding="async" loading="lazy" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDNQhOhIQnGVWd9g28r0fr9gDdoDWAtSzDOR3E206cHeqGMfJWLc7o4OV2Aady0cdj8e-TCLerchmuRBx2mVd0jJmlAcWhkpWqKuK71yH0OVcaf5PFhY4j15FVlT0rXfHBPcVt3vk0Rhij6BmR3J8LS7--XWBVPYrNDMBNJPvSZOCebrkSWbgMTMXvgzWvIknUogsIL-DdjiMEtruL9loWgwlpAcwB-UhwdCo_37UTPz3UnXzxKa8d907P0LTp-cOIduDz3icK051tm"/>
+<div class="absolute inset-0 bg-primary/10"></div>
+</div>
+</div>
+</section>
+
+<div class="section-divider" aria-hidden="true"></div>
+
+<section class="bg-background py-20 px-8" id="site-info">
+<div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+<article class="bg-surface-container-low p-8 border border-outline-variant/20" id="privacy">
+<h2 class="font-headline text-3xl uppercase mb-4">Privacy Policy</h2>
+<p class="font-label text-on-surface-variant leading-relaxed">RIPE 2027 only uses contact details voluntarily shared for ticket enquiries, submissions, and event coordination. Information is handled by the organizing team and is not sold to third parties.</p>
+</article>
+<article class="bg-surface-container-low p-8 border border-outline-variant/20" id="terms">
+<h2 class="font-headline text-3xl uppercase mb-4">Terms of Service</h2>
+<p class="font-label text-on-surface-variant leading-relaxed">Submission dates, review outcomes, and conference schedules are subject to organizer approval. By contacting the team or downloading the brochure, visitors agree to use the information for conference participation only.</p>
+</article>
+<article class="bg-surface-container-low p-8 border border-outline-variant/20" id="archive">
+<h2 class="font-headline text-3xl uppercase mb-4">Archive</h2>
+<p class="font-label text-on-surface-variant leading-relaxed">Conference brochure, committee information, and timeline details on this page reflect the current RIPE 2027 draft release. Earlier editions can be requested directly from the organizers by email.</p>
+</article>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-neutral-950 border-none rounded-none">
+<div class="flex flex-col md:flex-row justify-between items-center p-12 w-full max-w-7xl mx-auto">
+<div class="mb-8 md:mb-0">
+<span class="text-2xl font-normal text-white font-headline tracking-wide uppercase">RIPE 2027</span>
+</div>
+<div class="flex flex-col md:flex-row items-center gap-8 mb-8 md:mb-0">
+<a class="font-label uppercase tracking-widest text-[9px] text-neutral-500 hover:text-blue-400 transition-colors" href="#privacy">PRIVACY POLICY</a>
+<a class="font-label uppercase tracking-widest text-[9px] text-neutral-500 hover:text-blue-400 transition-colors" href="#terms">TERMS OF SERVICE</a>
+<a class="font-label uppercase tracking-widest text-[9px] text-neutral-500 hover:text-blue-400 transition-colors" href="#archive">ARCHIVE</a>
+</div>
+<div class="text-center md:text-right">
+<p class="font-label uppercase tracking-widest text-[9px] text-neutral-500">&copy; 2027 RIPE SUMMIT. ALL RIGHTS RESERVED.</p>
+</div>
+</div>
+</footer>
+</body></html>
