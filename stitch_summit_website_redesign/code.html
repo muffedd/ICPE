@@ -85,7 +85,7 @@
               "fontFamily": {
                       "headline": ["Anton", "sans-serif"],
                       "body": ["Inter", "sans-serif"],
-                      "label": ["Public Sans", "sans-serif"],
+                      "label": ["Swansea", "Public Sans", "sans-serif"],
                       "serif": ["Playfair Display", "serif"]
               }
             },
@@ -95,6 +95,18 @@
 <style>
         .material-symbols-outlined {
             font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        @font-face {
+            font-family: 'Swansea';
+            src: local('Swansea'), local('Swansea-Regular');
+            font-weight: normal;
+            font-style: normal;
+        }
+        @font-face {
+            font-family: 'Swansea';
+            src: local('Swansea Bold'), local('Swansea-Bold');
+            font-weight: bold;
+            font-style: normal;
         }
         .hero-gradient {
             background: linear-gradient(to top, #3367ff 0%, #3367ff 20%, rgba(51, 103, 255, 0.4) 45%, transparent 70%);
@@ -238,6 +250,7 @@
 <!-- Center Huge Text — responsive sizing fix for mobile -->
 <div class="relative z-10 w-full max-w-7xl mx-auto px-8 flex flex-col justify-center items-center mt-[-10vh]">
     <div class="w-full flex flex-col gap-2 md:gap-8 items-center md:items-start md:pl-[10%] lg:pl-[15%]">
+        <span class="font-label text-primary/90 uppercase tracking-[0.25em] text-[10px] md:text-xs lg:text-sm font-bold block mb-1 md:mb-[-15px] ml-1 text-center md:text-left">3rd International Conference on Recent Innovations in Production Engineering</span>
         <h1 class="font-headline text-[52px] md:text-[120px] lg:text-[150px] font-normal text-white leading-[0.9] tracking-normal uppercase text-left">
             RIPE
         </h1>
@@ -277,22 +290,22 @@
 <div class="p-12 border-b md:border-b-0 md:border-r border-white/10 flex flex-col gap-4 bg-white/[0.02] hover:bg-white/[0.04] transition-colors duration-500 backdrop-blur-sm group">
 <span class="font-label text-primary tracking-[0.2em] text-[10px] font-bold uppercase group-hover:text-white transition-colors">Tracks</span>
 <span class="font-headline font-normal text-6xl text-on-surface">25+</span>
-<p class="font-body text-sm text-on-surface-variant">Core manufacturing &amp; digital production domains</p>
+<p class="font-label text-sm text-on-surface-variant">Core manufacturing &amp; digital production domains</p>
 </div>
 <div class="p-12 border-b md:border-b-0 md:border-r border-white/10 flex flex-col gap-4 hover:bg-white/[0.04] transition-colors duration-500 group">
 <span class="font-label text-primary tracking-[0.2em] text-[10px] font-bold uppercase group-hover:text-white transition-colors">Journals</span>
 <span class="font-headline font-normal text-6xl text-on-surface">Q1/Q2</span>
-<p class="font-body text-sm text-on-surface-variant">Selected papers published in Scopus-indexed journals</p>
+<p class="font-label text-sm text-on-surface-variant">Selected papers published in Scopus-indexed journals</p>
 </div>
 <div class="p-12 border-b md:border-b-0 md:border-r border-white/10 flex flex-col gap-4 bg-white/[0.02] hover:bg-white/[0.04] transition-colors duration-500 backdrop-blur-sm group">
 <span class="font-label text-primary tracking-[0.2em] text-[10px] font-bold uppercase group-hover:text-white transition-colors">Location</span>
 <span class="font-headline font-normal text-6xl text-on-surface">MIT</span>
-<p class="font-body text-sm text-on-surface-variant">Madras Institute of Technology Campus</p>
+<p class="font-label text-sm text-on-surface-variant">Madras Institute of Technology Campus</p>
 </div>
 <div class="p-12 flex flex-col gap-4 hover:bg-white/[0.04] transition-colors duration-500 group">
 <span class="font-label text-primary tracking-[0.2em] text-[10px] font-bold uppercase group-hover:text-white transition-colors">Legacy</span>
 <span class="font-headline font-normal text-6xl text-on-surface">3rd</span>
-<p class="font-body text-sm text-on-surface-variant">Edition of the RIPE international conference</p>
+<p class="font-label text-sm text-on-surface-variant">Edition of the RIPE international conference</p>
 </div>
 </div>
 </div>
@@ -314,7 +327,7 @@
             <div class="accordion-item border-b border-white/20 group cursor-pointer bg-[#0e0e10]">
                 <button aria-expanded="false" class="accordion-trigger py-6 md:py-10 flex flex-col md:flex-row md:items-center justify-between transition-colors duration-300 w-full text-left" type="button">
                     <div class="flex items-center gap-6 md:gap-16 w-full">
-                        <span class="font-headline text-xl md:text-3xl text-primary font-bold">01</span>
+                        <span class="font-label text-xl md:text-3xl text-primary font-bold">01</span>
                         <h3 class="font-headline text-4xl md:text-7xl font-normal text-white transition-all duration-500 tracking-tight uppercase">Anna University</h3>
                     </div>
                     <span class="material-symbols-outlined text-white/50 group-hover:text-white transition-colors transform group-[.active]:rotate-180 duration-500 mt-4 md:mt-0 self-end md:self-auto text-3xl">expand_more</span>
@@ -329,7 +342,7 @@
                             </p>
                         </div>
                         <div class="w-full md:w-[45%]">
-                            <p class="font-body text-base md:text-lg text-white/80 leading-relaxed font-light">
+                            <p class="font-label text-base md:text-lg text-white/80 leading-relaxed font-light">
                                 Anna University was established on September 4th, 1978, as a unitary type of University. It offers higher education in Engineering, Technology, Architecture, and Applied Sciences. Besides promoting research, it fosters cooperation between the academic and industrial communities. It integrates four well-known technical institutions: CEG, ACT, MIT, and SAP.
                             </p>
                         </div>
@@ -344,7 +357,7 @@
             <div class="accordion-item border-b border-white/20 group cursor-pointer bg-[#0e0e10]">
                 <button aria-expanded="false" class="accordion-trigger py-6 md:py-10 flex flex-col md:flex-row md:items-center justify-between transition-colors duration-300 w-full text-left" type="button">
                     <div class="flex items-center gap-6 md:gap-16 w-full">
-                        <span class="font-headline text-xl md:text-3xl text-primary font-bold">02</span>
+                        <span class="font-label text-xl md:text-3xl text-primary font-bold">02</span>
                         <h3 class="font-headline text-4xl md:text-7xl font-normal text-white transition-all duration-500 tracking-tight uppercase">Madras Inst. of Tech</h3>
                     </div>
                     <span class="material-symbols-outlined text-white/50 group-hover:text-white transition-colors transform group-[.active]:rotate-180 duration-500 mt-4 md:mt-0 self-end md:self-auto text-3xl">expand_more</span>
@@ -359,7 +372,7 @@
                             </p>
                         </div>
                         <div class="w-full md:w-[45%]">
-                            <p class="font-body text-base md:text-lg text-white/80 leading-relaxed font-light">
+                            <p class="font-label text-base md:text-lg text-white/80 leading-relaxed font-light">
                                 In 1949, Shri C. Rajam established the Madras Institute of Technology. It was the rare genius and daring of its founder that made MIT offer courses like Aeronautical, Automobile, Electronics Engineering, and Instrument Technology for the first time in India. MIT has produced great scientists like Dr. A.P.J. Abdul Kalam and ISRO Chairman K. Sivan.
                             </p>
                         </div>
@@ -374,7 +387,7 @@
             <div class="accordion-item border-b border-white/20 group cursor-pointer bg-[#0e0e10]">
                 <button aria-expanded="false" class="accordion-trigger py-6 md:py-10 flex flex-col md:flex-row md:items-center justify-between transition-colors duration-300 w-full text-left" type="button">
                     <div class="flex items-center gap-6 md:gap-16 w-full">
-                        <span class="font-headline text-xl md:text-3xl text-primary font-bold">03</span>
+                        <span class="font-label text-xl md:text-3xl text-primary font-bold">03</span>
                         <h3 class="font-headline text-4xl md:text-7xl font-normal text-white transition-all duration-500 tracking-tight uppercase">The Department</h3>
                     </div>
                     <span class="material-symbols-outlined text-white/50 group-hover:text-white transition-colors transform group-[.active]:rotate-180 duration-500 mt-4 md:mt-0 self-end md:self-auto text-3xl">expand_more</span>
@@ -389,7 +402,7 @@
                             </p>
                         </div>
                         <div class="w-full md:w-[45%]">
-                            <p class="font-body text-base md:text-lg text-white/80 leading-relaxed font-light">
+                            <p class="font-label text-base md:text-lg text-white/80 leading-relaxed font-light">
                                 The Department of Production Technology proudly celebrates its Golden Jubilee (1977-2027), marking 50 Years of Excellence. Established in 1977, it has grown into a leading multidisciplinary centre for Manufacturing, Automation, Robotics, and Mechatronics. It offers multiple prestigious B.E. and M.E. programs.
                             </p>
                         </div>
@@ -404,7 +417,7 @@
             <div class="accordion-item border-b border-white/20 group cursor-pointer bg-[#0e0e10]">
                 <button aria-expanded="false" class="accordion-trigger py-6 md:py-10 flex flex-col md:flex-row md:items-center justify-between transition-colors duration-300 w-full text-left" type="button">
                     <div class="flex items-center gap-6 md:gap-16 w-full">
-                        <span class="font-headline text-xl md:text-3xl text-primary font-bold">04</span>
+                        <span class="font-label text-xl md:text-3xl text-primary font-bold">04</span>
                         <h3 class="font-headline text-4xl md:text-7xl font-normal text-white transition-all duration-500 tracking-tight uppercase">The Conference</h3>
                     </div>
                     <span class="material-symbols-outlined text-white/50 group-hover:text-white transition-colors transform group-[.active]:rotate-180 duration-500 mt-4 md:mt-0 self-end md:self-auto text-3xl">expand_more</span>
@@ -419,7 +432,7 @@
                             </p>
                         </div>
                         <div class="w-full md:w-[45%]">
-                            <p class="font-body text-base md:text-lg text-white/80 leading-relaxed font-light">
+                            <p class="font-label text-base md:text-lg text-white/80 leading-relaxed font-light">
                                 The 3rd International Conference on Recent Innovations in Production Engineering (RIPE 2027) builds on a legacy of conferences in manufacturing, design, mechatronics, and automation. RIPE 2027 will unite researchers to exchange ideas, address challenges, and gain insights through keynote lectures by eminent speakers.
                             </p>
                         </div>
@@ -441,66 +454,65 @@
     <div class="max-w-6xl mx-auto">
         <div class="flex flex-col md:flex-row justify-between items-start md:items-end mb-20 gap-8 border-b border-white/10 pb-12">
             <div>
-                <span class="font-label text-primary uppercase tracking-[0.3em] text-[10px] font-black mb-4 block">Why RIPE 2027</span>
-                <h2 class="font-headline text-5xl md:text-7xl font-normal uppercase tracking-wide">The RIPE <span class="text-primary">Impact</span></h2>
-            </div>
-            <p class="font-body text-on-surface-variant text-base max-w-md leading-relaxed">A premier gathering where academia meets industry — immerse yourself in cutting-edge research, world-class speakers, and career-defining networking.</p>
-        </div>
-
-        <div class="flex flex-col">
-            <div class="agenda-row">
-                <div class="agenda-time-cell">
-                    <span class="font-body text-primary text-sm font-bold uppercase tracking-widest">01</span>
-                </div>
-                <div class="agenda-event-cell">
-                    <h3 class="font-headline text-lg text-white uppercase">Scopus-Indexed Publications</h3>
-                    <p class="font-body text-sm text-on-surface-variant mt-1">Get your research published in Q1/Q2 Scopus-indexed journals and proceedings — a direct boost to your academic portfolio.</p>
-                </div>
-            </div>
-            <div class="agenda-row">
-                <div class="agenda-time-cell">
-                    <span class="font-body text-primary text-sm font-bold uppercase tracking-widest">02</span>
-                </div>
-                <div class="agenda-event-cell">
-                    <h3 class="font-headline text-lg text-white uppercase">Keynote Lectures</h3>
-                    <p class="font-body text-sm text-on-surface-variant mt-1">Learn from eminent speakers from institutions like IIT Madras, NUS Singapore, University of Aveiro, and Vienna University of Technology.</p>
-                </div>
-            </div>
-            <div class="agenda-row">
-                <div class="agenda-time-cell">
-                    <span class="font-body text-primary text-sm font-bold uppercase tracking-widest">03</span>
-                </div>
-                <div class="agenda-event-cell">
-                    <h3 class="font-headline text-lg text-white uppercase">Global Networking</h3>
-                    <p class="font-body text-sm text-on-surface-variant mt-1">Connect with researchers from 10+ countries — forge collaborations that span continents, labs, and disciplines.</p>
-                </div>
-            </div>
-            <div class="agenda-row">
-                <div class="agenda-time-cell">
-                    <span class="font-body text-primary text-sm font-bold uppercase tracking-widest">04</span>
-                </div>
-                <div class="agenda-event-cell">
-                    <h3 class="font-headline text-lg text-white uppercase">Industry 5.0 Focus</h3>
-                    <p class="font-body text-sm text-on-surface-variant mt-1">Dive into the future of manufacturing with tracks on AI-driven production, cyber-physical systems, and human-robot collaboration.</p>
-                </div>
-            </div>
-            <div class="agenda-row">
-                <div class="agenda-time-cell">
-                    <span class="font-body text-primary text-sm font-bold uppercase tracking-widest">05</span>
-                </div>
-                <div class="agenda-event-cell">
-                    <h3 class="font-headline text-lg text-white uppercase">50 Years of Legacy</h3>
-                    <p class="font-body text-sm text-on-surface-variant mt-1">Celebrate the Golden Jubilee of the Department of Production Technology — a milestone event at a historic institution.</p>
-                </div>
-            </div>
-            <div class="agenda-row">
-                <div class="agenda-time-cell">
-                    <span class="font-body text-primary text-sm font-bold uppercase tracking-widest">06</span>
-                </div>
-                <div class="agenda-event-cell">
-                    <h3 class="font-headline text-lg text-white uppercase">Chennai Experience</h3>
-                    <p class="font-body text-sm text-on-surface-variant mt-1">Attend the conference at MIT Campus in vibrant Chennai — a city where ancient culture meets cutting-edge technology.</p>
-                </div>
+    <span class="font-label text-primary uppercase tracking-[0.3em] text-[10px] font-black mb-4 block">Why RIPE 2027</span>
+    <h2 class="font-headline text-5xl md:text-7xl font-normal uppercase tracking-wide">The RIPE <span class="text-primary">Impact</span></h2>
+</div>
+<p class="font-label text-on-surface-variant text-base max-w-md leading-relaxed">A premier gathering where academia meets industry — immerse yourself in cutting-edge research, world-class speakers, and career-defining networking.</p>
+</div>
+<div class="flex flex-col">
+<div class="agenda-row">
+<div class="agenda-time-cell">
+    <span class="font-label text-primary text-sm font-bold uppercase tracking-widest">01</span>
+</div>
+<div class="agenda-event-cell">
+    <h3 class="font-headline text-lg text-white uppercase">Scopus-Indexed Publications</h3>
+    <p class="font-label text-sm text-on-surface-variant mt-1">Get your research published in Q1/Q2 Scopus-indexed journals and proceedings — a direct boost to your academic portfolio.</p>
+</div>
+</div>
+<div class="agenda-row">
+<div class="agenda-time-cell">
+    <span class="font-label text-primary text-sm font-bold uppercase tracking-widest">02</span>
+</div>
+<div class="agenda-event-cell">
+    <h3 class="font-headline text-lg text-white uppercase">Keynote Lectures</h3>
+    <p class="font-label text-sm text-on-surface-variant mt-1">Learn from eminent speakers from institutions like IIT Madras, NUS Singapore, University of Aveiro, and Vienna University of Technology.</p>
+</div>
+</div>
+<div class="agenda-row">
+<div class="agenda-time-cell">
+    <span class="font-label text-primary text-sm font-bold uppercase tracking-widest">03</span>
+</div>
+<div class="agenda-event-cell">
+    <h3 class="font-headline text-lg text-white uppercase">Global Networking</h3>
+    <p class="font-label text-sm text-on-surface-variant mt-1">Connect with researchers from 10+ countries — forge collaborations that span continents, labs, and disciplines.</p>
+</div>
+</div>
+<div class="agenda-row">
+<div class="agenda-time-cell">
+    <span class="font-label text-primary text-sm font-bold uppercase tracking-widest">04</span>
+</div>
+<div class="agenda-event-cell">
+    <h3 class="font-headline text-lg text-white uppercase">Industry 5.0 Focus</h3>
+    <p class="font-label text-sm text-on-surface-variant mt-1">Dive into the future of manufacturing with tracks on AI-driven production, cyber-physical systems, and human-robot collaboration.</p>
+</div>
+</div>
+<div class="agenda-row">
+<div class="agenda-time-cell">
+    <span class="font-label text-primary text-sm font-bold uppercase tracking-widest">05</span>
+</div>
+<div class="agenda-event-cell">
+    <h3 class="font-headline text-lg text-white uppercase">50 Years of Legacy</h3>
+    <p class="font-label text-sm text-on-surface-variant mt-1">Celebrate the Golden Jubilee of the Department of Production Technology — a milestone event at a historic institution.</p>
+</div>
+</div>
+<div class="agenda-row">
+<div class="agenda-time-cell">
+    <span class="font-label text-primary text-sm font-bold uppercase tracking-widest">06</span>
+</div>
+<div class="agenda-event-cell">
+    <h3 class="font-headline text-lg text-white uppercase">Chennai Experience</h3>
+    <p class="font-label text-sm text-on-surface-variant mt-1">Attend the conference at MIT Campus in vibrant Chennai — a city where ancient culture meets cutting-edge technology.</p>
+</div>
             </div>
         </div>
     </div>
@@ -1444,7 +1456,7 @@ document.addEventListener("DOMContentLoaded", function() {
 <h2 class="font-headline text-4xl lg:text-5xl font-normal uppercase mb-10 leading-tight">
                     Madras Institute of <br/> Technology Campus,<br/> Anna University
                 </h2>
-<div class="flex flex-col gap-6 font-body text-on-surface-variant">
+<div class="flex flex-col gap-6 font-label text-on-surface-variant">
 <p class="flex items-center gap-4">
 <span class="material-symbols-outlined text-primary">location_on</span>
                         Chromepet, Chennai - 600044, India
@@ -1472,15 +1484,15 @@ document.addEventListener("DOMContentLoaded", function() {
 <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
 <article class="bg-surface-container-low p-8 border border-outline-variant/20" id="privacy">
 <h2 class="font-headline text-3xl uppercase mb-4">Privacy Policy</h2>
-<p class="font-body text-on-surface-variant leading-relaxed">RIPE 2027 only uses contact details voluntarily shared for ticket enquiries, submissions, and event coordination. Information is handled by the organizing team and is not sold to third parties.</p>
+<p class="font-label text-on-surface-variant leading-relaxed">RIPE 2027 only uses contact details voluntarily shared for ticket enquiries, submissions, and event coordination. Information is handled by the organizing team and is not sold to third parties.</p>
 </article>
 <article class="bg-surface-container-low p-8 border border-outline-variant/20" id="terms">
 <h2 class="font-headline text-3xl uppercase mb-4">Terms of Service</h2>
-<p class="font-body text-on-surface-variant leading-relaxed">Submission dates, review outcomes, and conference schedules are subject to organizer approval. By contacting the team or downloading the brochure, visitors agree to use the information for conference participation only.</p>
+<p class="font-label text-on-surface-variant leading-relaxed">Submission dates, review outcomes, and conference schedules are subject to organizer approval. By contacting the team or downloading the brochure, visitors agree to use the information for conference participation only.</p>
 </article>
 <article class="bg-surface-container-low p-8 border border-outline-variant/20" id="archive">
 <h2 class="font-headline text-3xl uppercase mb-4">Archive</h2>
-<p class="font-body text-on-surface-variant leading-relaxed">Conference brochure, committee information, and timeline details on this page reflect the current RIPE 2027 draft release. Earlier editions can be requested directly from the organizers by email.</p>
+<p class="font-label text-on-surface-variant leading-relaxed">Conference brochure, committee information, and timeline details on this page reflect the current RIPE 2027 draft release. Earlier editions can be requested directly from the organizers by email.</p>
 </article>
 </div>
 </section>
@@ -1491,8 +1503,8 @@ document.addEventListener("DOMContentLoaded", function() {
 <span class="text-2xl font-normal text-white font-headline tracking-wide uppercase">RIPE 2027</span>
 </div>
 <div class="flex flex-col md:flex-row items-center gap-8 mb-8 md:mb-0">
-<a class="font-['Public_Sans'] uppercase tracking-widest text-[9px] text-neutral-500 hover:text-blue-400 transition-colors" href="#privacy">PRIVACY POLICY</a>
-<a class="font-['Public_Sans'] uppercase tracking-widest text-[9px] text-neutral-500 hover:text-blue-400 transition-colors" href="#terms">TERMS OF SERVICE</a>
+<a class="font-label uppercase tracking-widest text-[9px] text-neutral-500 hover:text-blue-400 transition-colors" href="#privacy">PRIVACY POLICY</a>
+<a class="font-label uppercase tracking-widest text-[9px] text-neutral-500 hover:text-blue-400 transition-colors" href="#terms">TERMS OF SERVICE</a>
 <a class="font-label uppercase tracking-widest text-[9px] text-neutral-500 hover:text-blue-400 transition-colors" href="#archive">ARCHIVE</a>
 </div>
 <div class="text-center md:text-right">
